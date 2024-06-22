@@ -1,10 +1,13 @@
+// App.js
 import React from 'react';
-import './App.css'; // Import your CSS file
-import LandingPage from './LandingPage'; // Import your LandingPage component
+import './App.css'; 
+import Navbar from './Navbar'; // Import the Navbar component
+import LandingPage from './LandingPage';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <LandingPage /> 
     </div>
   );

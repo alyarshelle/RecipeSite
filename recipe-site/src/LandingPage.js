@@ -64,10 +64,7 @@ function LandingPage() {
   ];
 
   return (
-    <div>
-      <header>
-        <h1>Welcome to Crafty Kitchen</h1>
-      </header>
+    <div>    
       <h2>Popular Recipes</h2>
       <div className="recipes">
         {recipes.map((recipe, index) => (

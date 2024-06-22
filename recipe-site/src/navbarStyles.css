@@ -1,0 +1,40 @@
+/* navbarStyles.css */
+.navbar {
+  background-color: #333;
+  padding: 20px 40px; /* Adjust padding as needed */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Align items on the same line with space in between */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+  margin: 0;
+  color: white;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px; /* Adjust spacing between items */
+}
+
+.navbar-nav .nav-item:first-child {
+  margin-left: auto; /* Push all items to the right */
+}
+
+.navbar-nav .nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: yellow;
+}
