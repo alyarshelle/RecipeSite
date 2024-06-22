@@ -73,15 +73,40 @@ function LandingPage() {
         <h1>Simple Recipes For Your Busy Lives</h1> 
       </section>
       <section id="highlight">
-        <img src={easy} alt="Quick and Easy" />
-        <img src={healthy} alt="Healthy" />
-        <img src={cupcake} alt="Baking" />
-        <img src={culture} alt="Cultural" />
+        <div class="image-container">
+          <a href="https://example.com">
+            <img src={easy} alt="Quick and Easy" class="fade-on-hover"  />
+          </a>
 
-        <div class="quick image-contain">Quick and Easy</div>  
-        <div class="health image-contain">Healthy</div>
-        <div class="cupcake image-contain">Baking</div>
-        <div class="culture image-contain">Cultural Cuisines</div>  
+          <a href="https://example.com">
+            <img src={healthy} alt="Healthy" class="fade-on-hover1"/>
+          </a>
+
+          <a href="https://example.com">
+            <img src={cupcake} alt="Baking" class="fade-on-hover2"/>
+          </a>
+
+          <a href="https://example.com">
+            <img src={culture} alt="Cultural" class="fade-on-hover3"/>
+          </a>
+
+          <div id="under" class="quick image-contain">
+            <a href="https://example.com">Quick and Easy</a>
+          </div> 
+
+          <div id="under" class="health image-contain">
+            <a href="https://example.com">Healthy</a>
+          </div>
+
+          <div id="under" class="cupcake image-contain">
+            <a href="https://example.com">Baking</a>
+          </div>
+
+          <div id="under" class="culture image-contain">
+            <a href="https://example.com">Cultural Cuisines</a>
+          </div> 
+
+        </div>
 
       </section>
       <section>

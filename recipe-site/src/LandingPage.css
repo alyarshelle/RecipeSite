@@ -57,44 +57,60 @@
   }
 
   #highlight {
-    align-items: center;
+    
     background-color: rgb(200, 254, 254);
-    height: 300px;
+    height: 500px;
 
   }
 
   #highlight img {
     width: 260px; /* Set a fixed width for each image */
     height: 250px;
-    padding: 20px;
+    margin: 40px 10px;
+    justify-content: center;
   }
 
   .image-contain{
     width: 150px;
     height: 30px;
     background: blue;
-    color: white;
     text-align: center;
     position: absolute;
   }
 
+  #under a{
+    text-decoration: none;
+    color: white;
+  }
+
   .quick{
-    left: 230px;
-    top: 390px;
+    left: 270px;
+    top: 410px;
   }
 
   .health{
-    left: 530px;
-    top: 390px;
+    left: 540px;
+    top: 410px;
   }
 
   .cupcake{
     left: 830px;
-    top: 390px;
+    top: 410px;
   }
 
   .culture{
-    left: 1130px;
-    top: 390px;
+    left: 1110px;
+    top: 410px;
   }
+
+  .fade-on-hover {
+    transition: opacity 0.3s ease; /* Transition effect on opacity */
+  }
+
+  .quick:hover, .health:hover, .cupcake:hover, .culture:hover{
+    opacity: 0.7; /* Reduce opacity on hover */
+  }
+  
+
+ 
   
