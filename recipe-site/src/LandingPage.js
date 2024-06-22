@@ -1,4 +1,3 @@
-// src/LandingPage.js
 import React from 'react';
 import Card from './Card';
 import spaghet from './Images/spaghetti.png';
@@ -9,6 +8,11 @@ import tsochicken from './Images/tsochicken.png';
 import potatoes from './Images/potatoes.png';
 import chickpeacurry from './Images/chickpeacurry.png';
 import eggrollbowl from './Images/eggrollinbowl.png';
+import cupcake from './Images/cupcake.jpg';
+import culture from './Images/culture.jpg';
+import easy from './Images/easy.jpg';
+import healthy from './Images/healthy.jpg';
+
 import './LandingPage.css';
 
 function LandingPage() {
@@ -64,7 +68,23 @@ function LandingPage() {
   ];
 
   return (
-    <div>    
+    <div>   
+      <section>
+        <h1>Simple Recipes For Your Busy Lives</h1> 
+      </section>
+      <section id="highlight">
+        <img src={easy} alt="Quick and Easy" />
+        <img src={healthy} alt="Healthy" />
+        <img src={cupcake} alt="Baking" />
+        <img src={culture} alt="Cultural" />
+
+        <div class="quick image-contain">Quick and Easy</div>  
+        <div class="health image-contain">Healthy</div>
+        <div class="cupcake image-contain">Baking</div>
+        <div class="culture image-contain">Cultural Cuisines</div>  
+
+      </section>
+      <section>
       <h2>Popular Recipes</h2>
       <div className="recipes">
         {recipes.map((recipe, index) => (
@@ -76,6 +96,7 @@ function LandingPage() {
           />
         ))}
       </div>
+      </section>
 
       <h2>Recently Viewed</h2>
 

@@ -47,7 +47,54 @@
   }
 
   h1{
-    text-align: left;
+    text-align: center;
     font-family: 'Dancing Script', cursive;
+  }
+
+  section h2{
+    text-align: center;
+    padding: 20px;
+  }
+
+  #highlight {
+    align-items: center;
+    background-color: rgb(200, 254, 254);
+    height: 300px;
+
+  }
+
+  #highlight img {
+    width: 260px; /* Set a fixed width for each image */
+    height: 250px;
+    padding: 20px;
+  }
+
+  .image-contain{
+    width: 150px;
+    height: 30px;
+    background: blue;
+    color: white;
+    text-align: center;
+    position: absolute;
+  }
+
+  .quick{
+    left: 230px;
+    top: 390px;
+  }
+
+  .health{
+    left: 530px;
+    top: 390px;
+  }
+
+  .cupcake{
+    left: 830px;
+    top: 390px;
+  }
+
+  .culture{
+    left: 1130px;
+    top: 390px;
   }
   
