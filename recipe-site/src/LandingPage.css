@@ -57,10 +57,8 @@
   }
 
   #highlight {
-    
     background-color: rgb(200, 254, 254);
-    height: 500px;
-
+    height: 400px;
   }
 
   #highlight img {
@@ -107,10 +105,11 @@
     transition: opacity 0.3s ease; /* Transition effect on opacity */
   }
 
-  .quick:hover, .health:hover, .cupcake:hover, .culture:hover{
+  .fade-on-hover:hover, .quick:hover, .health:hover, .cupcake:hover, .culture:hover{
     opacity: 0.7; /* Reduce opacity on hover */
-  }
-  
+  }  
 
- 
-  
+  #second {
+    background-color: rgb(200, 254, 254);
+    height: 400px;
+  }

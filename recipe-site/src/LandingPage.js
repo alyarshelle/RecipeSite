@@ -79,15 +79,15 @@ function LandingPage() {
           </a>
 
           <a href="https://example.com">
-            <img src={healthy} alt="Healthy" class="fade-on-hover1"/>
+            <img src={healthy} alt="Healthy" class="fade-on-hover"/>
           </a>
 
           <a href="https://example.com">
-            <img src={cupcake} alt="Baking" class="fade-on-hover2"/>
+            <img src={cupcake} alt="Baking" class="fade-on-hover"/>
           </a>
 
           <a href="https://example.com">
-            <img src={culture} alt="Cultural" class="fade-on-hover3"/>
+            <img src={culture} alt="Cultural" class="fade-on-hover"/>
           </a>
 
           <div id="under" class="quick image-contain">
@@ -120,13 +120,16 @@ function LandingPage() {
             description={recipe.description}
           />
         ))}
-      </div>
+      </div>    
       </section>
 
-      <h2>Recently Viewed</h2>
+      <section id="second">
+       <h2>Recently Viewed</h2>
 
       <div className="recipes">
       </div>
+
+      </section>
 
       <footer>
         <p>&copy; 2024 Crafty Kitchen</p>
