@@ -1,4 +1,3 @@
-// src/LandingPage.js
 import React from 'react';
 import Card from './Card';
 import spaghet from './Images/spaghetti.png';
@@ -9,6 +8,11 @@ import tsochicken from './Images/tsochicken.png';
 import potatoes from './Images/potatoes.png';
 import chickpeacurry from './Images/chickpeacurry.png';
 import eggrollbowl from './Images/eggrollinbowl.png';
+import cupcake from './Images/cupcake.jpg';
+import culture from './Images/culture.jpg';
+import easy from './Images/easy.jpg';
+import healthy from './Images/healthy.jpg';
+
 import './LandingPage.css';
 
 function LandingPage() {
@@ -64,10 +68,48 @@ function LandingPage() {
   ];
 
   return (
-    <div>
-      <header>
-        <h1>Welcome to Crafty Kitchen</h1>
-      </header>
+    <div>   
+      <section>
+        <h1>Simple Recipes For Your Busy Lives</h1> 
+      </section>
+      <section id="highlight">
+        <div class="image-container">
+          <a href="https://example.com">
+            <img src={easy} alt="Quick and Easy" class="fade-on-hover"  />
+          </a>
+
+          <a href="https://example.com">
+            <img src={healthy} alt="Healthy" class="fade-on-hover"/>
+          </a>
+
+          <a href="https://example.com">
+            <img src={cupcake} alt="Baking" class="fade-on-hover"/>
+          </a>
+
+          <a href="https://example.com">
+            <img src={culture} alt="Cultural" class="fade-on-hover"/>
+          </a>
+
+          <div id="under" class="quick image-contain">
+            <a href="https://example.com">Quick and Easy</a>
+          </div> 
+
+          <div id="under" class="health image-contain">
+            <a href="https://example.com">Healthy</a>
+          </div>
+
+          <div id="under" class="cupcake image-contain">
+            <a href="https://example.com">Baking</a>
+          </div>
+
+          <div id="under" class="culture image-contain">
+            <a href="https://example.com">Cultural Cuisines</a>
+          </div> 
+
+        </div>
+
+      </section>
+      <section>
       <h2>Popular Recipes</h2>
       <div className="recipes">
         {recipes.map((recipe, index) => (
@@ -78,12 +120,16 @@ function LandingPage() {
             description={recipe.description}
           />
         ))}
-      </div>
+      </div>    
+      </section>
 
-      <h2>Recently Viewed</h2>
+      <section id="second">
+       <h2>Recently Viewed</h2>
 
       <div className="recipes">
       </div>
+
+      </section>
 
       <footer>
         <p>&copy; 2024 Crafty Kitchen</p>

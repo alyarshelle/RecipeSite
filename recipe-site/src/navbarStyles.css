@@ -1,0 +1,52 @@
+/* navbarStyles.css */
+.navbar {
+  background-color: #17c5f0;
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Align items on the same line with space in between */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-left {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust the height of your logo */
+  margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+.navbar-text {
+  color: white;
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Adjust spacing between items */
+  font-size: 20px; 
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* No margin for the last item */
+  margin-left: auto; /* Push all items to the right */
+}
+
+.navbar-nav .nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: yellow;
+}
