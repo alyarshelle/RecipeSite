@@ -4,11 +4,11 @@ function AllRecipes() {
     return ( 
         <div>   
         <section>
-            <h1>Simple Recipes For Your Busy Lives</h1> 
+            <h1>HEYO</h1> 
         </section>
 
         <section>
-            <h1>Recipes For Your Busy Lives</h1> 
+            <h1>Busy Lives</h1> 
         </section>
 
         </div>
