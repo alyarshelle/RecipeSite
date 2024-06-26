@@ -75,19 +75,19 @@ function LandingPage() {
       <section id="highlight">
         <div class="image-container">
           <a href="https://example.com">
-            <img src={easy} alt="Quick and Easy" class="fade-on-hover"  />
+            <img src={easy} alt="Quick and Easy" class="q fade-on-hover"  />
           </a>
 
           <a href="https://example.com">
-            <img src={healthy} alt="Healthy" class="fade-on-hover"/>
+            <img src={healthy} alt="Healthy" class=" h fade-on-hover"/>
           </a>
 
           <a href="https://example.com">
-            <img src={cupcake} alt="Baking" class="fade-on-hover"/>
+            <img src={cupcake} alt="Baking" class="c fade-on-hover"/>
           </a>
 
           <a href="https://example.com">
-            <img src={culture} alt="Cultural" class="fade-on-hover"/>
+            <img src={culture} alt="Cultural" class="cul fade-on-hover"/>
           </a>
 
           <div id="under" class="quick image-contain">
@@ -120,7 +120,11 @@ function LandingPage() {
             description={recipe.description}
           />
         ))}
-      </div>    
+      </div> 
+      <br/>
+        <p id="all">
+          <a href="/all-recipes">View All Recipes</a>
+        </p>   
       </section>
 
       <section id="second">

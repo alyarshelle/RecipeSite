@@ -2,8 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    padding-bottom: 80px; /* Adjust the padding bottom to accommodate the fixed footer */
   }
   
   .recipe-cards {
@@ -15,7 +13,7 @@
   
   .recipe-cards > * {
     flex: 0 0 calc(33.33% - 20px); /* Adjust as needed for spacing between cards */
-    margin-bottom: 20px; /* Adjust as needed for spacing between rows */
+    margin-bottom: 50px; /* Adjust as needed for spacing between rows */
   }
   
   header {
@@ -53,8 +51,24 @@
 
   section h2{
     text-align: center;
-    padding: 20px;
+    padding: 20px; 
   }
+
+  #all{
+    position: absolute;
+    top: 1190px;
+    right: 140px;
+  }
+
+  #all a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #all a:hover {
+    color: blue; /* Change text color on hover */
+  }
+
 
   #highlight {
     background-color: rgb(200, 254, 254);
@@ -65,7 +79,27 @@
     width: 260px; /* Set a fixed width for each image */
     height: 250px;
     margin: 40px 10px;
-    justify-content: center;
+    position: absolute;
+  }
+
+  .q{
+    left: 200px;
+    top: 160px;
+  }
+
+  .h{
+    left: 500px;
+    top: 160px;
+  }
+
+  .c{
+    left: 800px;
+    top: 160px;
+  }
+
+  .cul{
+    left: 1100px;
+    top: 160px;
   }
 
   .image-contain{
@@ -83,22 +117,22 @@
 
   .quick{
     left: 270px;
-    top: 410px;
+    top: 435px;
   }
 
   .health{
-    left: 540px;
-    top: 410px;
+    left: 560px;
+    top: 435px;
   }
 
   .cupcake{
-    left: 830px;
-    top: 410px;
+    left: 870px;
+    top: 435px;  
   }
 
   .culture{
-    left: 1110px;
-    top: 410px;
+    left: 1170px;
+    top: 435px;
   }
 
   .fade-on-hover {
