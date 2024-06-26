@@ -11,7 +11,7 @@ import eggrollbowl from './Images/eggrollinbowl.png';
 import cupcake from './Images/cupcake.jpg';
 import culture from './Images/culture.jpg';
 import easy from './Images/easy.jpg';
-import healthy from './Images/healthy.jpg';
+import healthy from './Images/healthy.jpg'; 
 
 import './LandingPage.css';
 
