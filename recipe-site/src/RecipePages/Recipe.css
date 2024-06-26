@@ -1,0 +1,60 @@
+/* General styling for the recipe container */
+.recipe-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styling for the recipe image */
+  .bordered-image {
+    display: block;
+    margin: 0 auto 20px;
+    max-height: 300px;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
+  
+  /* Styling for the recipe details */
+  .recipe-details {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .recipe-details ul {
+    padding-left: 20px;
+  }
+  
+  .recipe-details ol {
+    padding-left: 20px;
+  }
+  
+  /* Styling for the rating card */
+  .rating-card {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating-card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .rating-card .stars {
+    font-size: 24px;
+    color: gold;
+  }
+  
+  .rating-card p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  

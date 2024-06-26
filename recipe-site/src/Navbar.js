@@ -9,7 +9,7 @@ function Navbar() {
       <div className="navbar-container">
         <div className="navbar-left">
           <img src={Crafty} alt="The Crafty Kitchen Logo" className="navbar-logo" />
-          <h1 className="navbar-text">The Crafty Kitchen</h1>
+          <h1 className="navbar-text"><a href="/">The Crafty Kitchen</a></h1>
         </div>
         <ul className="navbar-nav">
           <li className="nav-item">

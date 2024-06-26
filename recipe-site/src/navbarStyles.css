@@ -50,3 +50,8 @@
 .navbar-nav .nav-item a:hover {
   color: yellow;
 }
+
+h1 a{
+  color: white;
+  text-decoration: none;
+}

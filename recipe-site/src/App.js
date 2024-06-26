@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import LandingPage from './LandingPage';
-import AllRecipes from './AllRecipes';
+import LandingPage from './RecipePages/LandingPage';
+import AllRecipes from './RecipePages/AllRecipes';
+import Spaghetti from './RecipePages/Spaghetti';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/all-recipes" component={AllRecipes} />
+          <Route path="/spaghetti-and-meatballs" component={Spaghetti} />
         </Switch>
     </Router>
   );

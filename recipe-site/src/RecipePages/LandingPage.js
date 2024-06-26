@@ -1,17 +1,17 @@
 import React from 'react';
-import Card from './Card';
-import spaghet from './Images/spaghetti.png';
-import chicktaco from './Images/chicktacos.png';
-import chipcookie from './Images/chocochip.png';
-import redvelvet from './Images/redvelvet.png';
-import tsochicken from './Images/tsochicken.png';
-import potatoes from './Images/potatoes.png';
-import chickpeacurry from './Images/chickpeacurry.png';
-import eggrollbowl from './Images/eggrollinbowl.png';
-import cupcake from './Images/cupcake.jpg';
-import culture from './Images/culture.jpg';
-import easy from './Images/easy.jpg';
-import healthy from './Images/healthy.jpg'; 
+import Card from '../Card';
+import spaghet from '../Images/spaghetti.png';
+import chicktaco from '../Images/chicktacos.png';
+import chipcookie from '../Images/chocochip.png';
+import redvelvet from '../Images/redvelvet.png';
+import tsochicken from '../Images/tsochicken.png';
+import potatoes from '../Images/potatoes.png';
+import chickpeacurry from '../Images/chickpeacurry.png';
+import eggrollbowl from '../Images/eggrollinbowl.png';
+import cupcake from '../Images/cupcake.jpg';
+import culture from '../Images/culture.jpg';
+import easy from '../Images/easy.jpg';
+import healthy from '../Images/healthy.jpg'; 
 
 import './LandingPage.css';
 
@@ -21,6 +21,7 @@ function LandingPage() {
       image: spaghet,
       title: 'Spaghetti and Meatballs',
       description: "Spaghetti and meatballs is a classic comfort food that's easy to make and tastes great!",
+      link: '/spaghetti-and-meatballs'
     },
 
     {
@@ -134,11 +135,10 @@ function LandingPage() {
       </div>
 
       </section>
-
-      <footer>
-        <p>&copy; 2024 Crafty Kitchen</p>
-      </footer>
+      
     </div>
+
+    
   );
 }
 
