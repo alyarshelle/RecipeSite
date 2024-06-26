@@ -6,7 +6,20 @@ function Spaghetti() {
   return (
     <div className="recipe-container">
       <h1>Spaghetti and Meatballs</h1>
-      <img id="image" src={spaghet} alt="Spaghetti and Meatballs" className="bordered-image" />
+      <div className="image-info-container">
+        <img id="image" src={spaghet} alt="Spaghetti and Meatballs" className="bordered-image" />
+
+        <div className="info-card">
+          <h2>Recipe Info</h2>
+          <div className="info">
+            <p><b>Prep Time:</b> 20 mins</p>
+            <p><b>Cook Time:</b> 25 mins</p>
+            <p><b>Total Time:</b> 45 mins</p>
+            <p><b>Difficulty:</b> Medium</p>
+            <p><b>Rating:</b> ★★★★☆ (4.5/5 from 200 reviews)</p>
+          </div>
+        </div>
+      </div>
 
       <div className="recipe-details">
         <b>Description:</b> Spaghetti and meatballs is a classic comfort food that's easy to make and tastes great!<br />
@@ -30,14 +43,6 @@ function Spaghetti() {
           <li>Add the marinara sauce to the skillet and simmer for 10 minutes.</li>
           <li>Serve the meatballs and sauce over the cooked spaghetti. Enjoy!</li>
         </ol>
-      </div>
-
-      <div className="rating-card">
-        <h2>Rate this Recipe</h2>
-        <div className="stars">
-          ★★★★☆
-        </div>
-        <p>4.5/5</p>
       </div>
     </div>
   );
