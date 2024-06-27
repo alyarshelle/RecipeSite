@@ -1,29 +1,48 @@
 import React from 'react';
-import spaghet from './Images/spaghetti.';
+import './Recipe.css'; // Ensure your CSS file is imported
 
-const RecipeDetail = ({ recipe }) => {
+function RecipeSubpage({ name, image, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions }) {
   return (
-    <div style={{ backgroundColor: '#b5651d', minHeight: '100vh', position: 'relative' }}>
-      <Container className="p-3">
-        <Card className="p-3">
-          <div className="header">
-            <h1>{recipe.title}</h1>
-          </div>
-          <img
-            src={yum}
-            alt={"ready to eat"}
-            style={{ display: 'block', margin: 'auto', marginBottom: '20px', maxHeight: '300px' }}
-          />
-          <div style={{ marginBottom: '20px' }}>
-            <b>Description:</b> {recipe.description}<br />
-            <b>Ingredients:</b> {recipe.ingredients}<br />
-            <b>Instructions:</b> {recipe.instructions}<br />
-            <b>How to Eat:</b> {recipe.howToEat}<br />
-          </div>
-        </Card>
-      </Container>
+    <div className="recipe-container">
+      <h1>{name}</h1>
+      <div className="image-info-container">
+        <img src={image} alt={name} className="bordered-image" />
+        <div className="description">
+          <p>{description}</p>
+        </div>
+      </div>
+
+      <div className="info-card">
+        <h2>Recipe Info</h2>
+        <div className="info">
+          <p><b>Rating:</b> {rating}</p>
+          <p><b>Prep Time:</b> {prepTime}</p>
+          <p><b>Cook Time:</b> {cookTime}</p>
+          <p><b>Total Time:</b> {totalTime}</p>
+          <p><b>Difficulty:</b> {difficulty}</p>
+        </div>
+      </div>
+
+      <div className="ingredients-instructions">
+        <div className="ingredients">
+          <b>Ingredients:</b>
+          <ul>
+            {ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="instructions">
+          <b>Instructions:</b>
+          <ol>
+            {instructions.map((instruction, index) => (
+              <li key={index}>{instruction}</li>
+            ))}
+          </ol>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default RecipeDetail;
+export default RecipeSubpage;
