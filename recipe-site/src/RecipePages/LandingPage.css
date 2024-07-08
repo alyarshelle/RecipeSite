@@ -54,7 +54,6 @@
     color: blue; /* Change text color on hover */
   }
 
-
   #highlight {
     background-color: rgb(200, 254, 254);
     height: 400px;
@@ -68,22 +67,22 @@
   }
 
   .q{
-    left: 200px;
+    left: 100px;
     top: 160px;
   }
 
   .h{
-    left: 500px;
+    left: 450px;
     top: 160px;
   }
 
   .c{
-    left: 800px;
+    right: 450px;
     top: 160px;
   }
 
   .cul{
-    left: 1100px;
+    right: 100px;
     top: 160px;
   }
 
@@ -101,22 +100,22 @@
   }
 
   .quick{
-    left: 270px;
+    left: 170px;
     top: 435px;
   }
 
   .health{
-    left: 560px;
+    left: 510px;
     top: 435px;
   }
 
   .cupcake{
-    left: 870px;
+    right: 510px;
     top: 435px;  
   }
 
   .culture{
-    left: 1170px;
+    right: 160px;
     top: 435px;
   }
 

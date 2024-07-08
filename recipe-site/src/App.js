@@ -4,7 +4,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import LandingPage from './RecipePages/LandingPage';
 import AllRecipes from './RecipePages/AllRecipes';
-import Spaghetti from './RecipePages/Spaghetti';
+import Spaghetti from './RecipePages/OriginalPages/Spaghetti';
+import ChickenTacos from './RecipePages/OriginalPages/ChickenTacos';
+import ChocolateChipCookies from './RecipePages/OriginalPages/ChocolateChipCookies';
+import GeneralTsoChicken from './RecipePages/OriginalPages/GeneralTsoChicken';
+import MashedPotatoes from './RecipePages/OriginalPages/MashedPotatoes';
+import RedVelvetCake from './RecipePages/OriginalPages/RedVelvetCake';
+import ChickpeaCurry from './RecipePages/OriginalPages/ChickpeaCurry';
+import EggRollInABowl from './RecipePages/OriginalPages/EggRollInABowl';
 
 function App() {
   return (
@@ -14,6 +21,13 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route path="/all-recipes" component={AllRecipes} />
           <Route path="/spaghetti-and-meatballs" component={Spaghetti} />
+          <Route path="/chicken-tacos" component={ChickenTacos} />
+          <Route path="/chocolate-chip-cookies" component={ChocolateChipCookies} />
+          <Route path="/general-tso-chicken" component={GeneralTsoChicken} />
+          <Route path="/mashed-potatoes" component={MashedPotatoes} />
+          <Route path="/red-velvet-cake" component={RedVelvetCake} />
+          <Route path="/chickpea-curry" component={ChickpeaCurry} />
+          <Route path="/egg-roll-in-a-bowl" component={EggRollInABowl} />
         </Switch>
     </Router>
   );

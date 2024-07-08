@@ -1,6 +1,6 @@
 import React from 'react';
-import spaghet from '../Images/spaghetti.png';
-import './Recipe.css';
+import spaghet from '../../Images/spaghetti.png';
+import '../Recipe.css';
 
 function Spaghetti() {
   return (

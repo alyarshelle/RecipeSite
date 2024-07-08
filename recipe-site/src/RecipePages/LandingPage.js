@@ -28,42 +28,49 @@ function LandingPage() {
         image: chicktaco,
         title: 'Chicken Tacos',
         description: "Chicken tacos are a quick and easy meal that's perfect for busy weeknights.",
+        link: '/chicken-tacos'
     },
 
     {
         image: chipcookie,
         title: 'Chocolate Chip Cookies',
         description: "Chocolate chip cookies are a delicious treat that everyone loves!",
+        link: '/chocolate-chip-cookies'
     },
 
     {
         image: tsochicken,
         title: 'General Tso Chicken',
         description: "General Tso chicken is a popular Chinese takeout dish that's easy to make at home.",
+        link: '/general-tso-chicken'
     },
 
     {
         image: potatoes,
         title: 'Mashed Potatoes',
         description: "Mashed potatoes are a classic side dish that pairs well with a variety of main courses.",
+        link: '/mashed-potatoes'
     },
 
     {
         image: redvelvet,
         title: 'Red Velvet Cake',
         description: "Red velvet cake is a classic dessert that's perfect for any occasion.",
+        link: '/red-velvet-cake'
     },
 
     {
         image: chickpeacurry,
         title: 'Chickpea Curry',
         description: "Chickpea curry is a flavorful vegetarian dish that's easy to make and tastes great!",
+        link: '/chickpea-curry'
     },
 
     {
         image: eggrollbowl,
         title: 'Egg Roll in A Bowl',
         description: "Egg roll in a bowl is a quick and easy meal that's packed with flavor!",
+        link: '/egg-roll-in-a-bowl'
     },
 
   ];
@@ -74,6 +81,7 @@ function LandingPage() {
         <h1>Simple Recipes For Your Busy Lives</h1> 
       </section>
       <section id="highlight">
+        <div class="box"></div>
         <div class="image-container">
           <a href="https://example.com">
             <img src={easy} alt="Quick and Easy" class="q fade-on-hover"  />
@@ -119,6 +127,7 @@ function LandingPage() {
             image={recipe.image}
             title={recipe.title}
             description={recipe.description}
+            link={recipe.link}
           />
         ))}
       </div> 
