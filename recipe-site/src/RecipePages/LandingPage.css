@@ -68,22 +68,23 @@
 
   .q{
     left: 100px;
-    top: 160px;
+    top: 30px;
   }
 
   .h{
     left: 450px;
-    top: 160px;
+    top: 30px;
   }
 
   .c{
     right: 450px;
-    top: 160px;
+    top: 30px;
   }
 
   .cul{
     right: 100px;
-    top: 160px;
+    top: 30px;
+    /* 160 */
   }
 
   .image-contain{
@@ -101,22 +102,23 @@
 
   .quick{
     left: 170px;
-    top: 435px;
+    top: 305px;
+    /* 435 */
   }
 
   .health{
     left: 510px;
-    top: 435px;
+    top: 305px;
   }
 
   .cupcake{
     right: 510px;
-    top: 435px;  
+    top: 305px;  
   }
 
   .culture{
     right: 160px;
-    top: 435px;
+    top: 305px;
   }
 
   .fade-on-hover {

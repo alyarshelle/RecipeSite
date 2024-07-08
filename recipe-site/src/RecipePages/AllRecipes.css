@@ -1,0 +1,49 @@
+/* Make the image span the full width of the screen */
+.food-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.food-section img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* General styling for the container of the image and text */
+.image-container {
+    position: relative;
+}
+
+/* Styling for the text overlay on the image */
+.image-text {
+    position: absolute;
+    top: 170px; /* Adjust top position as needed */
+    left: 670px; /* Adjust left position as needed */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* General styling that applies to both title1 and title2 */
+.image-text,
+#title1, #title2 {
+    font-family: 'Roboto', sans-serif; /* Example of shared styling */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    text-align: center;
+}
+
+/* Additional specific styling for the first title */
+#title1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; /* Apply Lobster font to title1 */
+}
+
+/* Additional specific styling for the second title */
+#title2 {
+    font-size: 24px;
+    margin-top: 10px; /* Custom spacing between titles */
+    font-family: 'Pacifico', cursive; /* Apply Pacifico font to title2 */
+}
