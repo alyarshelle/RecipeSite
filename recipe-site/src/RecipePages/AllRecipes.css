@@ -18,8 +18,8 @@
 /* Styling for the text overlay on the image */
 .image-text {
     position: absolute;
-    top: 170px; /* Adjust top position as needed */
-    left: 670px; /* Adjust left position as needed */
+    top: 170px;
+    left: 670px;
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -28,9 +28,9 @@
 /* General styling that applies to both title1 and title2 */
 .image-text,
 #title1, #title2 {
-    font-family: 'Roboto', sans-serif; /* Example of shared styling */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
