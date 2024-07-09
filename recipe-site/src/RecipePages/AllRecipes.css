@@ -47,3 +47,19 @@
     margin-top: 10px; /* Custom spacing between titles */
     font-family: 'Pacifico', cursive; /* Apply Pacifico font to title2 */
 }
+
+.image-item {
+    width: 300px; /* Set a fixed width for each grid item */
+    height: 450px; /* Set a fixed height for each grid item */
+    overflow: hidden; /* Ensure images don't overflow their containers */
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    gap: 10px; /* Adjust gap between flex items */
+}
+
+.image-item img {
+    max-width: 100%; /* Ensure images do not exceed their container width */
+    max-height: 100%; /* Ensure images do not exceed their container height */
+    object-fit: cover; /* Ensure the entire image fits within the container */
+    margin-right: 10px; /* Adjust spacing between images horizontally */
+}

@@ -133,17 +133,17 @@ function LandingPage() {
       </div> 
       <br/>
         <p id="all">
-          <a href="/all-recipes">View All Recipes</a>
+          <a href="/all-recipes">Show Me More!➔</a>
         </p>   
       </section>
 
-      <section id="second">
+      {/* <section id="second">
        <h2>Recently Viewed</h2>
 
       <div className="recipes">
       </div>
 
-      </section>
+      </section> */}
       
     </div>
 
