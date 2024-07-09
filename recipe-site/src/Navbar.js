@@ -22,6 +22,9 @@ function Navbar() {
             <a href="/search">Search</a>
           </li>
           <li className="nav-item">
+            <a href="/submit-recipe-form">Submit Recipe</a>
+          </li>
+          <li className="nav-item">
             <a href="/about">About</a>
           </li>
         </ul>

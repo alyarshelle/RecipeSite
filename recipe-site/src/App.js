@@ -12,6 +12,7 @@ import MashedPotatoes from './RecipePages/OriginalPages/MashedPotatoes';
 import RedVelvetCake from './RecipePages/OriginalPages/RedVelvetCake';
 import ChickpeaCurry from './RecipePages/OriginalPages/ChickpeaCurry';
 import EggRollInABowl from './RecipePages/OriginalPages/EggRollInABowl';
+import RecipeForm from './RecipeForm';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/red-velvet-cake" component={RedVelvetCake} />
           <Route path="/chickpea-curry" component={ChickpeaCurry} />
           <Route path="/egg-roll-in-a-bowl" component={EggRollInABowl} />
+          <Route path="/submit-recipe-form" component={RecipeForm} />
         </Switch>
     </Router>
   );
