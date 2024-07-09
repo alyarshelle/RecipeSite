@@ -8,10 +8,18 @@ import tsochicken from '../Images/tsochicken.png';
 import potatoes from '../Images/potatoes.png';
 import chickpeacurry from '../Images/chickpeacurry.png';
 import eggrollbowl from '../Images/eggrollinbowl.png';
+import baklava from '../Images/baklava.jpg';
+import culture from '../Images/culture.jpg';
+import crepes from '../Images/crepes.jpg';
+import curriedtomato from '../Images/curriedtomatolentil.jpg';
+import easy from '../Images/easy.jpg';
+import honeygarlic from '../Images/honeygarlicglazedsalmon.jpg';
+import mac from '../Images/macandcheese.jpg';
+import mediterranean from '../Images/mediterraneanchoppedsalad.jpg';
+import pastasaus from '../Images/pastasausage.jpg';
 import './AllRecipes.css';
 
-const AllRecipes = ({ images }) => {
-    // Define your images array with imported images
+const AllRecipes = () => {
     const recipeImages = [
         { url: spaghet, alt: 'Spaghetti' },
         { url: chicktaco, alt: 'Chicken Tacos' },
@@ -21,6 +29,15 @@ const AllRecipes = ({ images }) => {
         { url: redvelvet, alt: 'Red Velvet Cake' },
         { url: chickpeacurry, alt: 'Chickpea Curry' },
         { url: eggrollbowl, alt: 'Egg Roll in a Bowl' },
+        { url: baklava, alt: 'Baklava' },
+        { url: culture, alt: 'Cultural Dish' },
+        { url: crepes, alt: 'Crepes' },
+        { url: curriedtomato, alt: 'Curried Tomato Lentil Soup' },
+        { url: easy, alt: 'Easy Recipe' },
+        { url: honeygarlic, alt: 'Honey Garlic Glazed Salmon' },
+        { url: mac, alt: 'Mac and Cheese' },
+        { url: mediterranean, alt: 'Mediterranean Chopped Salad' },
+        { url: pastasaus, alt: 'Pasta with Sausage' },
     ];
 
     return (
