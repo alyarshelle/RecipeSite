@@ -1,12 +1,12 @@
 import React from 'react';
 import './Recipe.css'; // Ensure your CSS file is imported
 
-function RecipeSubpage({ name, image, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions }) {
+function RecipeSubpage({ title, image, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions }) {
   return (
     <div className="recipe-container">
-      <h1>{name}</h1>
+      <h1>{title}</h1>
       <div className="image-info-container">
-        <img src={image} alt={name} className="bordered-image" />
+        <img src={image} alt={title} className="bordered-image" />
         <div className="description">
           <p>{description}</p>
         </div>
