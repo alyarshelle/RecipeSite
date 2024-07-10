@@ -3,8 +3,9 @@ const router = express.Router();
 const fs = require("fs");
 const path = require("path");
 
+// Middleware to parse JSON bodies
 router.use(express.json());
-
+router.use(express.urlencoded({ extended: true }));
 
 // Define the file path for recipes.json
 const recipesFilePath = path.join("/workspaces/RecipeSite/recipe-site/data/recipes.json");
@@ -33,6 +34,7 @@ router.get("/recipes", getRecipes);
 function submitRecipe(req, res) {
     // Assuming you're receiving recipe data in the request body
     const { title, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions } = req.body;
+    console.log(req.body);
 
     // Read the current recipes from the JSON file
     fs.readFile(recipesFilePath, "utf8", (err, data) => {
@@ -59,7 +61,7 @@ function submitRecipe(req, res) {
             ingredients,
             instructions,
         });
-
+        
         // Write the updated recipes array back to the file
         fs.writeFile(recipesFilePath, JSON.stringify(recipes, null, 2), "utf8", (err) => {
             if (err) {

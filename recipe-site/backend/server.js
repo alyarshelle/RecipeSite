@@ -8,9 +8,7 @@ const app = express();
 const PORT = 3002;
 
 app.use(bodyParser.json());
-app.use(cors({
-  origin: 'http://localhost:3002',
-}));
+app.use(cors());
 
 const recipesFilePath = path.join("/workspaces/RecipeSite/recipe-site/data/recipes.json");
 
@@ -24,39 +22,35 @@ app.get('/', (req, res) => {
  });
 
  // Define a route handler for GET requests to fetch recipes
-app.get('/recipes', (req, res) => {
-    fs.readFile(recipesFilePath, 'utf8', (err, data) => {
-      if (err) {
-        console.error('Error reading file:', err);
-        return res.status(500).json({ error: 'Internal Server Error' });
-      }
-  
-      let recipes = [];
-      try {
-        if (!data.trim()) {
-          return res.status(200).json(recipes); // Return empty array if file is empty or not found
-        }
-        
+ app.get('/recipes', (req, res) => {
+  fs.readFile(recipesFilePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+
+    let recipes = [];
+    try {
+      if (data.trim()) {
         recipes = JSON.parse(data).recipes || [];
-      } catch (parseError) {
-        console.error('Error parsing JSON:', parseError);
-        return res.status(500).json({ error: 'Internal Server Error' });
       }
-  
-      res.status(200).json(recipes);
-    });
+    } catch (parseError) {
+      console.error('Error parsing JSON:', parseError);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+
+    res.status(200).json(recipes);
   });
+});
+
   
   
   app.post('/', (req, res) => {
     res.redirect('/submit');
   });
 
-  app.post('/submit',(req, res) => {
-    console.log(req.body);
+  app.post('/submit', upload.single('image'), (req, res) => {
     const { title, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions } = req.body;
-  
-    // Retrieve uploaded image file path
     const image = req.file ? req.file.path : null;
   
     fs.readFile(recipesFilePath, 'utf8', (err, data) => {
@@ -67,9 +61,7 @@ app.get('/recipes', (req, res) => {
   
       let recipes = [];
       try {
-        if (!data.trim()) {
-          console.warn('Recipes data not found or empty');
-        } else {
+        if (data.trim()) {
           recipes = JSON.parse(data).recipes || [];
         }
       } catch (parseError) {
@@ -77,11 +69,11 @@ app.get('/recipes', (req, res) => {
         return res.status(500).json({ error: 'Internal Server Error' });
       }
   
-      const id = getNextId(recipes); // Get the next available ID
-  
-      recipes.push({
+      const id = getNextId(recipes);
+      const newRecipe = {
         id,
         title,
+        image,
         description,
         rating,
         prepTime,
@@ -90,7 +82,9 @@ app.get('/recipes', (req, res) => {
         difficulty,
         ingredients,
         instructions,
-      });
+      };
+  
+      recipes.push(newRecipe);
   
       fs.writeFile(recipesFilePath, JSON.stringify({ recipes }, null, 2), (err) => {
         if (err) {
@@ -102,6 +96,7 @@ app.get('/recipes', (req, res) => {
       });
     });
   });
+  
 
   app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
