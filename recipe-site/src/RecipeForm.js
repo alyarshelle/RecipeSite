@@ -30,7 +30,7 @@ function RecipeForm() {
 
             console.log(parsedRecipeData);
 
-            const response = await fetch('/recipes', {
+            const response = await fetch('/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

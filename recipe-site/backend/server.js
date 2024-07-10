@@ -5,11 +5,11 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
-const PORT = 5000;
+const PORT = 3002;
 
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'http://localhost:3002',
 }));
 
 const recipesFilePath = path.join("/workspaces/RecipeSite/recipe-site/data/recipes.json");
@@ -49,10 +49,10 @@ app.get('/recipes', (req, res) => {
   
   
   app.post('/', (req, res) => {
-    res.redirect('/recipes');
+    res.redirect('/submit');
   });
 
-  app.post('/recipes',(req, res) => {
+  app.post('/submit',(req, res) => {
     console.log(req.body);
     const { title, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions } = req.body;
   
@@ -82,7 +82,6 @@ app.get('/recipes', (req, res) => {
       recipes.push({
         id,
         title,
-        image,
         description,
         rating,
         prepTime,

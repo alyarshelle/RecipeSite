@@ -3,12 +3,16 @@ const router = express.Router();
 const fs = require("fs");
 const path = require("path");
 
+router.use(express.json());
+
 
 // Define the file path for recipes.json
 const recipesFilePath = path.join("/workspaces/RecipeSite/recipe-site/data/recipes.json");
 
 // Function to handle fetching recipes
 function getRecipes(req, res) {
+
+    // Read the contents of the JSON file
     fs.readFile(recipesFilePath, "utf8", (err, data) => {
         if (err) {
             console.error("Error reading file:", err);
@@ -21,12 +25,13 @@ function getRecipes(req, res) {
     });
 }
 
+
 // Route for fetching recipes
 router.get("/recipes", getRecipes);
 
 // Function to handle submitting a recipe
 function submitRecipe(req, res) {
-    //console.log(req.body);
+    // Assuming you're receiving recipe data in the request body
     const { title, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions } = req.body;
 
     // Read the current recipes from the JSON file
@@ -44,7 +49,6 @@ function submitRecipe(req, res) {
 
         // Add the new recipe to the array
         recipes.push({
-            id,
             title,
             description,
             rating,
@@ -54,7 +58,7 @@ function submitRecipe(req, res) {
             difficulty,
             ingredients,
             instructions,
-          });
+        });
 
         // Write the updated recipes array back to the file
         fs.writeFile(recipesFilePath, JSON.stringify(recipes, null, 2), "utf8", (err) => {
@@ -69,8 +73,7 @@ function submitRecipe(req, res) {
     });
 }
 
-
 // Route for submitting a recipe
-router.post("/recipes", submitRecipe);
+router.post("/submit", submitRecipe);
 
 module.exports = { router, getRecipes };

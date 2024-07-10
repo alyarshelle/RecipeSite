@@ -13,10 +13,6 @@ app.get('/', (req, res) => {
     res.redirect('/recipes');
 });
 
-app.post('/', (req, res) => {
-    res.redirect('/recipes');
-});
-
 // Start the server
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
