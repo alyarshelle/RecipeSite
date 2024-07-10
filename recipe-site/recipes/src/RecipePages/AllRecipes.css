@@ -1,0 +1,78 @@
+/* Make the image span the full width of the screen */
+.food-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.food-section img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* General styling for the container of the image and text */
+.image-container {
+    position: relative;
+}
+
+/* Styling for the text overlay on the image */
+.image-text {
+    position: absolute;
+    top: 170px;
+    left: 670px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* General styling that applies to both title1 and title2 */
+.image-text,
+#title1, #title2 {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Additional specific styling for the first title */
+#title1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; /* Apply Lobster font to title1 */
+}
+
+/* Additional specific styling for the second title */
+#title2 {
+    font-size: 24px;
+    margin-top: 10px; /* Custom spacing between titles */
+    font-family: 'Pacifico', cursive; /* Apply Pacifico font to title2 */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 80px 5px;
+    margin: 120px;
+}
+
+.image-item {
+    /* width: 300px;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 300px;
+    height: 450px;
+    max-width: 100%; /* Ensure images do not exceed their container width */
+    max-height: 100%; /* Ensure images do not exceed their container height */
+    object-fit: cover; /* Ensure the entire image fits within the container */
+    margin-right: 10px; /* Adjust spacing between images horizontally */
+}
