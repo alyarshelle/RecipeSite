@@ -5,30 +5,24 @@ function RecipeForm() {
     const [recipeData, setRecipeData] = useState('');
     const [submissionMessage, setSubmissionMessage] = useState('');
     const [imageData, setImageData] = useState('');
-     // eslint-disable-next-line
-  const [submittedRecipe, setSubmittedRecipe] = useState(null);
+    const [submittedRecipe, setSubmittedRecipe] = useState(null);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            // Include image data in the JSON string before parsing
-            const recipeDataWithImage = recipeData.replace(
-                /({.*?})/,
-                (match) => {
-                    const json = JSON.parse(match);
-                    json.image = imageData;
-                    return JSON.stringify(json);
-                }
-            );
-
             const parsedRecipeData = JSON.parse(recipeData);
+            console.log("HEYO");
+            console.log(JSON.parse(recipeData));
 
             if (!isValidRecipe(parsedRecipeData)) {
+                console.log("HEO");
                 throw new Error('Invalid recipe format');
             }
 
-            console.log(parsedRecipeData);
+            console.log("HEY");
+
+            parsedRecipeData.image = imageData;
 
             const response = await fetch('/submit', {
                 method: 'POST',
@@ -37,6 +31,8 @@ function RecipeForm() {
                 },
                 body: JSON.stringify(parsedRecipeData),
             });
+
+            console.log("HO");
 
             if (response.ok) {
                 setSubmittedRecipe(parsedRecipeData);

@@ -1,5 +1,85 @@
-{
-    "name": "Strawberry Sorbet",
+[
+  {
+    "id": 1,
+    "title": "Strawberry Sorbet",
+    "description": [
+      "This refreshing strawberry sorbet is a perfect summer treat. Made with fresh strawberries, it has a vibrant color and a sweet-tart flavor that will cool you down on a hot day.",
+      "Easy to make with just a few ingredients, this sorbet is a healthy and delicious dessert option. Serve it in a bowl or on a cone for a delightful and guilt-free indulgence."
+    ],
+    "rating": "4.8",
+    "prepTime": "15 mins",
+    "cookTime": "0 mins",
+    "totalTime": "4 hrs 15 mins",
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 lb fresh strawberries, hulled",
+      "3/4 cup granulated sugar",
+      "3/4 cup water",
+      "1 tbsp lemon juice"
+    ],
+    "instructions": [
+      "In a saucepan, combine the sugar and water. Cook over medium heat, stirring until the sugar is completely dissolved. Remove from heat and let cool to room temperature.",
+      "In a blender, puree the strawberries until smooth. Strain the puree through a fine-mesh sieve to remove the seeds.",
+      "In a large bowl, combine the strawberry puree, sugar syrup, and lemon juice. Stir well.",
+      "Pour the mixture into an ice cream maker and freeze according to the manufacturer's instructions.",
+      "Transfer the sorbet to an airtight container and freeze for at least 4 hours or until firm.",
+      "Serve the sorbet in bowls or cones and enjoy!"
+    ]
+  },
+  {
+    "title": "Strawberry Sorbet",
+    "description": [
+      "This refreshing strawberry sorbet is a perfect summer treat. Made with fresh strawberries, it has a vibrant color and a sweet-tart flavor that will cool you down on a hot day.",
+      "Easy to make with just a few ingredients, this sorbet is a healthy and delicious dessert option. Serve it in a bowl or on a cone for a delightful and guilt-free indulgence."
+    ],
+    "rating": "4.8",
+    "prepTime": "15 mins",
+    "cookTime": "0 mins",
+    "totalTime": "4 hrs 15 mins",
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 lb fresh strawberries, hulled",
+      "3/4 cup granulated sugar",
+      "3/4 cup water",
+      "1 tbsp lemon juice"
+    ],
+    "instructions": [
+      "In a saucepan, combine the sugar and water. Cook over medium heat, stirring until the sugar is completely dissolved. Remove from heat and let cool to room temperature.",
+      "In a blender, puree the strawberries until smooth. Strain the puree through a fine-mesh sieve to remove the seeds.",
+      "In a large bowl, combine the strawberry puree, sugar syrup, and lemon juice. Stir well.",
+      "Pour the mixture into an ice cream maker and freeze according to the manufacturer's instructions.",
+      "Transfer the sorbet to an airtight container and freeze for at least 4 hours or until firm.",
+      "Serve the sorbet in bowls or cones and enjoy!"
+    ]
+  },
+  {
+    "title": "Strawberry Sorbet",
+    "description": [
+      "This refreshing strawberry sorbet is a perfect summer treat. Made with fresh strawberries, it has a vibrant color and a sweet-tart flavor that will cool you down on a hot day.",
+      "Easy to make with just a few ingredients, this sorbet is a healthy and delicious dessert option. Serve it in a bowl or on a cone for a delightful and guilt-free indulgence."
+    ],
+    "rating": "4.8",
+    "prepTime": "15 mins",
+    "cookTime": "0 mins",
+    "totalTime": "4 hrs 15 mins",
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 lb fresh strawberries, hulled",
+      "3/4 cup granulated sugar",
+      "3/4 cup water",
+      "1 tbsp lemon juice"
+    ],
+    "instructions": [
+      "In a saucepan, combine the sugar and water. Cook over medium heat, stirring until the sugar is completely dissolved. Remove from heat and let cool to room temperature.",
+      "In a blender, puree the strawberries until smooth. Strain the puree through a fine-mesh sieve to remove the seeds.",
+      "In a large bowl, combine the strawberry puree, sugar syrup, and lemon juice. Stir well.",
+      "Pour the mixture into an ice cream maker and freeze according to the manufacturer's instructions.",
+      "Transfer the sorbet to an airtight container and freeze for at least 4 hours or until firm.",
+      "Serve the sorbet in bowls or cones and enjoy!"
+    ]
+  },
+  {
+    "title": "Strawberry Sorbet",
     "description": [
       "This refreshing strawberry sorbet is a perfect summer treat. Made with fresh strawberries, it has a vibrant color and a sweet-tart flavor that will cool you down on a hot day.",
       "Easy to make with just a few ingredients, this sorbet is a healthy and delicious dessert option. Serve it in a bowl or on a cone for a delightful and guilt-free indulgence."
@@ -24,4 +104,4 @@
       "Serve the sorbet in bowls or cones and enjoy!"
     ]
   }
-  
+]

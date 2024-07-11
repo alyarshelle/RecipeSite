@@ -34,7 +34,6 @@ router.get("/recipes", getRecipes);
 function submitRecipe(req, res) {
     // Assuming you're receiving recipe data in the request body
     const { title, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions } = req.body;
-    console.log(req.body);
 
     // Read the current recipes from the JSON file
     fs.readFile(recipesFilePath, "utf8", (err, data) => {
