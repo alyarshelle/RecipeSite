@@ -12,15 +12,9 @@ function RecipeForm() {
 
         try {
             const parsedRecipeData = JSON.parse(recipeData);
-            console.log("HEYO");
-            console.log(JSON.parse(recipeData));
-
             if (!isValidRecipe(parsedRecipeData)) {
-                console.log("HEO");
                 throw new Error('Invalid recipe format');
             }
-
-            console.log("HEY");
 
             parsedRecipeData.image = imageData;
 
@@ -31,8 +25,6 @@ function RecipeForm() {
                 },
                 body: JSON.stringify(parsedRecipeData),
             });
-
-            console.log("HO");
 
             if (response.ok) {
                 setSubmittedRecipe(parsedRecipeData);

@@ -85,6 +85,7 @@ app.post('/submit', upload.single('image'), (req, res) => {
         }
 
         const id = getNextId(recipes);
+        console.log(id);
         const newRecipe = {
             id,
             title,
