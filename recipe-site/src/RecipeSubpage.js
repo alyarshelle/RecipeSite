@@ -1,5 +1,5 @@
 import React from 'react';
-import './Recipe.css'; // Ensure your CSS file is imported
+import './RecipePages/Recipe.css'; // Ensure your CSS file is imported
 
 function RecipeSubpage({ title, image, description, rating, prepTime, cookTime, totalTime, difficulty, ingredients, instructions }) {
   return (

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './RecipeForm.css';
 
 function RecipeForm() {
     const [recipeData, setRecipeData] = useState('');
     const [submissionMessage, setSubmissionMessage] = useState('');
-    const [imageData, setImageData] = useState('');
     const [submittedRecipe, setSubmittedRecipe] = useState(null);
 
     const handleSubmit = async (event) => {
@@ -15,8 +15,6 @@ function RecipeForm() {
             if (!isValidRecipe(parsedRecipeData)) {
                 throw new Error('Invalid recipe format');
             }
-
-            parsedRecipeData.image = imageData;
 
             const response = await fetch('/submit', {
                 method: 'POST',
@@ -29,7 +27,6 @@ function RecipeForm() {
             if (response.ok) {
                 setSubmittedRecipe(parsedRecipeData);
                 setRecipeData('');
-                setImageData('');
                 setSubmissionMessage('Submission Successful!');
                 setTimeout(() => {
                     setSubmissionMessage('');
@@ -54,21 +51,13 @@ function RecipeForm() {
         return recipe && recipe.title && recipe.ingredients && recipe.instructions;
     };
 
-    const handleImageChange = (event) => {
-        const file = event.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setImageData(reader.result);
-            };
-            reader.readAsDataURL(file);
-        }
-    };
-
     return (
         <Router>
         <div>
             <h1>Add Your Recipe Here!</h1>
+            <p>Enter your recipe in JSON format as described below. Make sure your description of the recipe is at most
+                2 paragraphs and no longer than 190 words. The ingredients and instructions should be in list format.
+            </p>
             <form onSubmit={handleSubmit}>
                 <textarea
                     placeholder={`Enter JSON-like data in the following format: 
@@ -87,13 +76,7 @@ function RecipeForm() {
                     onChange={(event) => setRecipeData(event.target.value)}
                     required
                     rows={20}
-                    cols={50}
-                />
-                <br />
-                <input
-                    type="file"
-                    accept="image/*"
-                    onChange={handleImageChange}
+                    cols={100}
                 />
                 <br />
                 <button type="submit">Submit</button>

@@ -1,0 +1,15 @@
+textarea, input{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 60%;
+}
+
+button{
+    margin-left: 385px;
+}
+
+
+p{
+    text-align: center;
+}

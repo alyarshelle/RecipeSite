@@ -13,6 +13,8 @@ import RedVelvetCake from './RecipePages/OriginalPages/RedVelvetCake';
 import ChickpeaCurry from './RecipePages/OriginalPages/ChickpeaCurry';
 import EggRollInABowl from './RecipePages/OriginalPages/EggRollInABowl';
 import RecipeForm from './RecipeForm';
+import RecipeComponent from './RecipeComponent';
+import RecipeSubpage from './RecipeSubpage';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/chickpea-curry" component={ChickpeaCurry} />
           <Route path="/egg-roll-in-a-bowl" component={EggRollInABowl} />
           <Route path="/submit-recipe-form" component={RecipeForm} />
+          <Route path="/recipe" render={() => <RecipeComponent />} />
+          <Route path="/recipe/:id" render={(props) => <RecipeSubpage />} />
         </Switch>
     </Router>
   );
