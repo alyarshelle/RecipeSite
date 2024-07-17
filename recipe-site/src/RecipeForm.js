@@ -4,6 +4,7 @@ import './RecipeForm.css';
 
 function RecipeForm() {
     const [recipeData, setRecipeData] = useState('');
+    const [imageFile, setImageFile] = useState(null);
     const [submissionMessage, setSubmissionMessage] = useState('');
     const [submittedRecipe, setSubmittedRecipe] = useState(null);
 
@@ -16,17 +17,22 @@ function RecipeForm() {
                 throw new Error('Invalid recipe format');
             }
 
+            const formData = new FormData();
+            formData.append('recipeData', JSON.stringify(parsedRecipeData)); // Stringify recipe data
+            if (imageFile) {
+                formData.append('imageFile', imageFile); // Append image file
+            }
+
             const response = await fetch('/submit', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(parsedRecipeData),
+                body: formData,
             });
 
             if (response.ok) {
-                setSubmittedRecipe(parsedRecipeData);
-                setRecipeData('');
+                const responseData = await response.json(); // Parse response JSON
+                setSubmittedRecipe(responseData); // Set submitted recipe data
+                setRecipeData(''); // Clear form inputs
+                setImageFile(null);
                 setSubmissionMessage('Submission Successful!');
                 setTimeout(() => {
                     setSubmissionMessage('');
@@ -47,42 +53,50 @@ function RecipeForm() {
         }
     };
 
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+        setImageFile(file);
+    };
+
     const isValidRecipe = (recipe) => {
         return recipe && recipe.title && recipe.ingredients && recipe.instructions;
     };
 
     return (
         <Router>
-        <div>
-            <h1>Add Your Recipe Here!</h1>
-            <p>Enter your recipe in JSON format as described below. Make sure your description of the recipe is at most
-                2 paragraphs and no longer than 190 words. The ingredients and instructions should be in list format.
-            </p>
-            <form onSubmit={handleSubmit}>
-                <textarea
-                    placeholder={`Enter JSON-like data in the following format: 
-                    {
-                        "title": "",
-                        "description": [],
-                        "rating": "",
-                        "prepTime": "",
-                        "cookTime": "",
-                        "totalTime": "",
-                        "difficulty": "",
-                        "ingredients": [],
-                        "instructions": [],
-                    }`}
-                    value={recipeData}
-                    onChange={(event) => setRecipeData(event.target.value)}
-                    required
-                    rows={20}
-                    cols={100}
-                />
-                <br />
-                <button type="submit">Submit</button>
-            </form>
-            {submissionMessage && <p>{submissionMessage}</p>}
-        </div>
+            <div>
+                <h1>Add Your Recipe Here!</h1>
+                <p>Enter your recipe in JSON format as described below. Make sure your description of the recipe is at most
+                    2 paragraphs and no longer than 190 words. The ingredients and instructions should be in list format.
+                </p>
+                <form onSubmit={handleSubmit}>
+                    <textarea
+                        placeholder={`Enter JSON-like data in the following format: 
+                        {
+                            "title": "",
+                            "description": [],
+                            "rating": "",
+                            "prepTime": "",
+                            "cookTime": "",
+                            "totalTime": "",
+                            "difficulty": "",
+                            "ingredients": [],
+                            "instructions": [],
+                        }`}
+                        value={recipeData}
+                        onChange={(event) => setRecipeData(event.target.value)}
+                        required
+                        rows={20}
+                        cols={100}
+                    />
+                    <br />
+                    {/* File input for uploading image */}
+                    <input type="file" onChange={handleFileChange} accept="image/*" />
+                    <br />
+                    <button type="submit">Submit</button>
+                </form>
+                {submissionMessage && <p>{submissionMessage}</p>}
+            </div>
         </Router>
     );
 }
