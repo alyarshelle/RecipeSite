@@ -16,7 +16,7 @@ app.use(cors({
 // Multer setup for handling file uploads
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, '/workspaces/RecipeSite/recipe-site/uploads'); // Ensure the correct path to your uploads directory
+        cb(null, '/workspaces/RecipeSite/recipe-site/src/uploads'); // Ensure the correct path to your uploads directory
     },
     filename: function (req, file, cb) {
         // Use a unique filename to prevent overwriting existing files
@@ -27,10 +27,6 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 const recipesFilePath = path.join("/workspaces/RecipeSite/recipe-site/data/recipes.json");
-
-function getNextId(recipes) {
-    return recipes.length > 0 ? Math.max(...recipes.map(recipe => recipe.id)) + 1 : 1;
-}
 
 app.get('/', (req, res) => {
     res.redirect('/recipes');
@@ -89,7 +85,7 @@ app.post('/submit', upload.single('imageFile'), (req, res) => {
     }
 
     fs.readFile(recipesFilePath, 'utf8', (err, data) => {
-        if (err) {
+        if (err) { 
             console.error('Error reading file:', err);
             return res.status(500).json({ error: 'Internal Server Error' });
         }
@@ -104,11 +100,11 @@ app.post('/submit', upload.single('imageFile'), (req, res) => {
             return res.status(500).json({ error: 'Internal Server Error' });
         }
 
-        const id = getNextId(recipes);
+        const link = title.toLowerCase().replace(/ /g, '-');
 
         // Construct the new recipe object
         const newRecipe = {
-            id,
+            link,
             title,
             description,
             rating,
@@ -129,7 +125,7 @@ app.post('/submit', upload.single('imageFile'), (req, res) => {
                 return res.status(500).json({ error: 'Internal Server Error' });
             }
 
-            res.status(200).json({ message: 'Recipe submitted successfully', id });
+            res.status(200).json({ message: 'Recipe submitted successfully'});
         });
     });
 });

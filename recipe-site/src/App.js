@@ -31,9 +31,9 @@ function App() {
           <Route path="/red-velvet-cake" component={RedVelvetCake} />
           <Route path="/chickpea-curry" component={ChickpeaCurry} />
           <Route path="/egg-roll-in-a-bowl" component={EggRollInABowl} />
-          <Route path="/submit-recipe-form" component={RecipeForm} />
           <Route path="/recipe" render={() => <RecipeComponent />} />
-          <Route path="/recipe/:title" render={(props) => <RecipeSubpage />} />
+          <Route path="recipe/:link" render={(props) => <RecipeSubpage {...props} />} />
+          <Route path="/submit-recipe-form" component={RecipeForm} />
         </Switch>
     </Router>
   );

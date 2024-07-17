@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "link": "strawberry-sorbet",
       "title": "Strawberry Sorbet",
       "description": [
         "This refreshing strawberry sorbet is a perfect summer treat. Made with fresh strawberries, it has a vibrant color and a sweet-tart flavor that will cool you down on a hot day.",
@@ -27,6 +27,75 @@
         "Serve the sorbet in bowls or cones and enjoy!"
       ],
       "imageUrl": "/uploads/strawberrysorbet.jpg"
+    },
+    {
+      "link": "classic-french-crepes",
+      "title": "Classic French Crepes",
+      "description": [
+        "These classic French crepes are thin, delicate, and perfect for any meal of the day. Whether sweet or savory, they can be filled with a variety of ingredients to suit your taste.",
+        "With a simple batter of flour, eggs, milk, and butter, these crepes cook up quickly on a hot skillet. Enjoy them with fresh fruits and whipped cream for breakfast, or with ham and cheese for a satisfying lunch or dinner."
+      ],
+      "rating": "4.9",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "difficulty": "Intermediate",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "2 large eggs",
+        "1 1/4 cups milk",
+        "2 tbsp unsalted butter, melted",
+        "1/4 tsp salt",
+        "1 tbsp granulated sugar (optional, for sweet crepes)"
+      ],
+      "instructions": [
+        "In a large mixing bowl, whisk together the flour and salt (and sugar if making sweet crepes).",
+        "In another bowl, whisk together the eggs, milk, and melted butter until well combined.",
+        "Gradually pour the wet ingredients into the dry ingredients, whisking constantly until smooth and no lumps remain.",
+        "Heat a non-stick skillet or crepe pan over medium heat. Lightly grease the pan with butter or oil.",
+        "Pour about 1/4 cup of batter into the center of the hot skillet, swirling it around to evenly coat the bottom in a thin layer.",
+        "Cook the crepe for about 1-2 minutes, or until the edges start to lift slightly and the bottom is lightly golden brown.",
+        "Carefully flip the crepe using a spatula, and cook the other side for an additional 1-2 minutes.",
+        "Transfer the cooked crepe to a plate and cover with a clean kitchen towel to keep warm.",
+        "Repeat with the remaining batter, greasing the pan lightly between each crepe.",
+        "Serve the crepes warm with your choice of fillings such as fresh fruits, whipped cream, Nutella, ham, cheese, or spinach and mushrooms.",
+        "Enjoy your delicious homemade French crepes!"
+      ],
+      "imageUrl": "/uploads/crepes.jpg"
+    },
+    {
+      "link": "mediterranean-chopped-salad",
+      "title": "Mediterranean Chopped Salad",
+      "description": [
+        "This Mediterranean chopped salad is a vibrant and refreshing dish, packed with fresh vegetables and Mediterranean flavors. It's a perfect side dish or a light meal on its own.",
+        "With ingredients like cucumbers, tomatoes, olives, and feta cheese, this salad is colorful and full of texture. Tossed in a simple olive oil and lemon dressing, it's healthy and delicious."
+      ],
+      "rating": "4.7",
+      "prepTime": "20 mins",
+      "cookTime": "0 mins",
+      "totalTime": "20 mins",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 cucumber, diced",
+        "2 cups cherry tomatoes, halved",
+        "1/2 red onion, thinly sliced",
+        "1 cup Kalamata olives, pitted and halved",
+        "1/2 cup crumbled feta cheese",
+        "1/4 cup fresh parsley, chopped",
+        "1/4 cup fresh mint, chopped",
+        "1/4 cup extra-virgin olive oil",
+        "Juice of 1 lemon",
+        "Salt and pepper, to taste"
+      ],
+      "instructions": [
+        "In a large salad bowl, combine the diced cucumber, cherry tomatoes, red onion, Kalamata olives, feta cheese, parsley, and mint.",
+        "Drizzle the olive oil and lemon juice over the salad ingredients.",
+        "Season with salt and pepper, to taste.",
+        "Gently toss the salad until well combined and evenly coated with the dressing.",
+        "Serve immediately, or refrigerate for a few hours to allow the flavors to meld together.",
+        "Enjoy your refreshing Mediterranean chopped salad!"
+      ],
+      "imageUrl": "/uploads/mediterraneanchoppedsalad.jpg"
     }
   ]
 }

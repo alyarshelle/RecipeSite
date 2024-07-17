@@ -7,7 +7,7 @@ function RecipeForm() {
     const [imageFile, setImageFile] = useState(null);
     const [submissionMessage, setSubmissionMessage] = useState('');
     const [submittedRecipe, setSubmittedRecipe] = useState(null);
-
+ 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -67,7 +67,11 @@ function RecipeForm() {
             <div>
                 <h1>Add Your Recipe Here!</h1>
                 <p>Enter your recipe in JSON format as described below. Make sure your description of the recipe is at most
-                    2 paragraphs and no longer than 190 words. The ingredients and instructions should be in list format.
+                    2 paragraphs and no longer than 190 words. The ingredients and instructions should be in list format. Your
+                    rating should be any decimal number, to the tenths place, between 0.0 and 5.0. The prepTime, cookTime, and
+                    totalTime should be in the format "X hours Y minutes" or "Y minutes" where X and Y are integers. You can also
+                    abbreviate hours to "hrs" and minutes to "mins". The difficulty should be one of the following: "Very Easy", 
+                    "Easy", "Medium", "Hard", or "Very Hard". The image file should be in .jpg format only.
                 </p>
                 <form onSubmit={handleSubmit}>
                     <textarea
@@ -90,7 +94,6 @@ function RecipeForm() {
                         cols={100}
                     />
                     <br />
-                    {/* File input for uploading image */}
                     <input type="file" onChange={handleFileChange} accept="image/*" />
                     <br />
                     <button type="submit">Submit</button>
