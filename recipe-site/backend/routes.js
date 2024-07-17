@@ -40,7 +40,7 @@ function submitRecipe(req, res) {
         if (err) {
             console.error("Error reading file:", err);
             return res.status(500).json({ error: "Internal Server Error" });
-        }
+        } 
 
         // Parse the existing JSON data or initialize as an empty array if file is empty
         let recipes = [];

@@ -41,8 +41,8 @@ function RecipeComponent() {
               </div>
               <div style={{ marginBottom: '20px' }}>
                 {recipes.map(recipe => (
-                  <div key={recipe.id}>
-                    <Link to={`/recipe/${recipe.id}`}>
+                  <div key={recipe.title}>
+                    <Link to={`/recipe/${recipe.title}`}>
                       <h3>{recipe.title}</h3>
                     </Link>
                   </div>
@@ -50,7 +50,7 @@ function RecipeComponent() {
               </div>
           </Route>
           {recipes.map(recipe => (
-            <Route key={recipe.id} path={`/recipe/${recipe.id}`}>
+            <Route key={recipe.title} path={`/recipe/${recipe.title}`}>
               <RecipeSubpage recipe={recipe} />
             </Route>
           ))}

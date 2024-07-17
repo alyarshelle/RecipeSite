@@ -33,7 +33,7 @@ function App() {
           <Route path="/egg-roll-in-a-bowl" component={EggRollInABowl} />
           <Route path="/submit-recipe-form" component={RecipeForm} />
           <Route path="/recipe" render={() => <RecipeComponent />} />
-          <Route path="/recipe/:id" render={(props) => <RecipeSubpage />} />
+          <Route path="/recipe/:title" render={(props) => <RecipeSubpage />} />
         </Switch>
     </Router>
   );
