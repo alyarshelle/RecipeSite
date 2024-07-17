@@ -83,36 +83,36 @@ function LandingPage() {
       <section id="highlight">
         <div class="box"></div>
         <div class="image-container">
-          <a href="https://example.com">
+          <a href="/all-recipes">
             <img src={easy} alt="Quick and Easy" class="q fade-on-hover"  />
           </a>
 
-          <a href="https://example.com">
+          <a href="/all-recipes">
             <img src={healthy} alt="Healthy" class=" h fade-on-hover"/>
           </a>
 
-          <a href="https://example.com">
+          <a href="/all-recipes">
             <img src={cupcake} alt="Baking" class="c fade-on-hover"/>
           </a>
 
-          <a href="https://example.com">
+          <a href="/all-recipes">
             <img src={culture} alt="Cultural" class="cul fade-on-hover"/>
           </a>
 
           <div id="under" class="quick image-contain">
-            <a href="https://example.com">Quick and Easy</a>
+            <a href="/all-recipes">Quick and Easy</a>
           </div> 
 
           <div id="under" class="health image-contain">
-            <a href="https://example.com">Healthy</a>
+            <a href="/all-recipes">Healthy</a>
           </div>
 
           <div id="under" class="cupcake image-contain">
-            <a href="https://example.com">Baking</a>
+            <a href="/all-recipes">Baking</a>
           </div>
 
           <div id="under" class="culture image-contain">
-            <a href="https://example.com">Cultural Cuisines</a>
+            <a href="/all-recipes">Cultural Cuisines</a>
           </div> 
 
         </div>

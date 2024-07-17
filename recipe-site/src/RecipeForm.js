@@ -6,6 +6,7 @@ function RecipeForm() {
     const [recipeData, setRecipeData] = useState('');
     const [imageFile, setImageFile] = useState(null);
     const [submissionMessage, setSubmissionMessage] = useState('');
+    // eslint-disable-next-line
     const [submittedRecipe, setSubmittedRecipe] = useState(null);
  
     const handleSubmit = async (event) => {
@@ -38,9 +39,8 @@ function RecipeForm() {
                     setSubmissionMessage('');
                 }, 3000);
             } else {
-                const errorMessage = await response.text();
-                console.error('Error:', errorMessage);
-                setSubmissionMessage('Error submitting recipe. Please try again.');
+                console.error('Error: Please upload a .jpg file');
+                setSubmissionMessage('Please upload a .jpg file');
             }
         } catch (error) {
             if (error instanceof SyntaxError) {
@@ -55,8 +55,15 @@ function RecipeForm() {
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
-        setImageFile(file);
+        if (file && file.type === "image/jpeg") {
+            setImageFile(file);
+        } else {
+            setImageFile(null); // Clear image file if not .jpg
+            console.error('Error: Please upload a .jpg file');
+            setSubmissionMessage('Please upload a .jpg file.');
+        }
     };
+    
 
     const isValidRecipe = (recipe) => {
         return recipe && recipe.title && recipe.ingredients && recipe.instructions;
@@ -98,7 +105,7 @@ function RecipeForm() {
                     <br />
                     <button type="submit">Submit</button>
                 </form>
-                {submissionMessage && <p>{submissionMessage}</p>}
+                {submissionMessage && <p id="mid">{submissionMessage}</p>}
             </div>
         </Router>
     );

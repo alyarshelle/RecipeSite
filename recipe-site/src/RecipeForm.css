@@ -9,6 +9,12 @@ button{
     margin-left: 385px;
 }
 
+#mid{
+    text-align: center;
+    color:red;
+    font-size: bold 30px;
+}
+
 
 #desc{
     text-align: left;
