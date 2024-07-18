@@ -50,7 +50,7 @@ const About = () => {
         </ul>
       </section>
       <section>
-        <h2>Additional Features</h2>
+        <h2>Additional Features for the Future</h2>
         <ul>
           <li>
             <strong>Responsive Design:</strong> My website is designed to be fully responsive, providing an optimal viewing 
