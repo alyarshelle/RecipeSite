@@ -18,8 +18,9 @@
 /* Styling for the text overlay on the image */
 .image-text {
     position: absolute;
-    top: 170px;
-    left: 670px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -129,4 +130,3 @@
     color: #777;
     cursor: not-allowed;
 }
-

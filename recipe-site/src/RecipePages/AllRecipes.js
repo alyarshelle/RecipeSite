@@ -10,29 +10,34 @@ const importAll = (r) => {
 };
 
 const images = importAll(require.context('../Images', false, /\.(png|jpe?g|svg)$/));
+const images2 = importAll(require.context('../uploads', false, /\.(jpe?g|svg)$/));
+const combinedImages = { ...images, ...images2 };
 
 const AllRecipes = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const recipesPerPage = 12;
 
     const recipeImages = [
-        { url: images['spaghetti.png'], alt: 'Spaghetti and Meatballs - Traditional Italian dish with pasta and savory meatballs', link: '/spaghetti-and-meatballs' },
-        { url: images['chicktacos.png'], alt: 'Chicken Tacos - Deliciously seasoned chicken in tortillas', link: '/chicken-tacos' },
-        { url: images['chocochip.png'], alt: 'Chocolate Chip Cookie - Homemade sweet treat with chocolate chips', link: '/chocolate-chip-cookie' },
-        { url: images['tsochicken.png'], alt: 'General Tso Chicken - Sweet and spicy Chinese dish', link: '/general-tso-chicken' },
-        { url: images['potatoes.png'], alt: 'Mashed Potatoes - Creamy side dish made from potatoes', link: '/mashed-potatoes' },
-        { url: images['redvelvet.png'], alt: 'Red Velvet Cake - Rich and moist cake with cream cheese frosting', link: '/red-velvet-cake' },
-        { url: images['chickpeacurry.png'], alt: 'Chickpea Curry - Flavorful vegetarian curry with chickpeas', link: '/chickpea-curry' },
-        { url: images['eggrollinbowl.png'], alt: 'Egg Roll in a Bowl - All the flavors of an egg roll without the wrapper', link: '/egg-roll-in-a-bowl' },
+        { url: combinedImages['spaghetti.png'], alt: 'Spaghetti and Meatballs - Traditional Italian dish with pasta and savory meatballs', link: '/spaghetti-and-meatballs' },
+        { url: combinedImages['chicktacos.png'], alt: 'Chicken Tacos - Deliciously seasoned chicken in tortillas', link: '/chicken-tacos' },
+        { url: combinedImages['chocochip.png'], alt: 'Chocolate Chip Cookie - Homemade sweet treat with chocolate chips', link: '/chocolate-chip-cookies' },
+        { url: combinedImages['tsochicken.png'], alt: 'General Tso Chicken - Sweet and spicy Chinese dish', link: '/general-tso-chicken' },
+        { url: combinedImages['potatoes.png'], alt: 'Mashed Potatoes - Creamy side dish made from potatoes', link: '/mashed-potatoes' },
+        { url: combinedImages['redvelvet.png'], alt: 'Red Velvet Cake - Rich and moist cake with cream cheese frosting', link: '/red-velvet-cake' },
+        { url: combinedImages['chickpeacurry.png'], alt: 'Chickpea Curry - Flavorful vegetarian curry with chickpeas', link: '/chickpea-curry' },
+        { url: combinedImages['eggrollinbowl.png'], alt: 'Egg Roll in a Bowl - All the flavors of an egg roll without the wrapper', link: '/egg-roll-in-a-bowl' },
         
-// { url: images['baklava.jpg'], alt: 'Baklava - Sweet pastry made of layers of filo filled with nuts', link: '/baklava' },
-// { url: images['culture.jpg'], alt: 'Cultural Dish - A representation of diverse cultural cuisine', link: '/cultural-dish' },
-// { url: images['curriedtomatolentil.jpg'], alt: 'Curried Tomato Lentil Soup - Hearty soup with lentils and tomatoes', link: '/curried-tomato-lentil-soup' },
-// { url: images['easy.jpg'], alt: 'Easy Recipe - Quick and simple dish for busy days', link: '/easy-recipe' },
-// { url: images['honeygarlicglazedsalmon.jpg'], alt: 'Honey Garlic Glazed Salmon - Tender salmon fillet with sweet garlic glaze', link: '/honey-garlic-glazed-salmon' },
-// { url: images['macandcheese.jpg'], alt: 'Mac and Cheese - Classic comfort food with cheesy pasta', link: '/mac-and-cheese' },
-// { url: images['pastasausage.jpg'], alt: 'Pasta with Sausage - Pasta dish with savory sausage and tomato sauce', link: '/pasta-with-sausage' },
-
+        { url: combinedImages['baklava.jpg'], alt: 'Baklava - Sweet pastry made of layers of filo filled with nuts', link: '/recipe/baklava' },
+        { url: combinedImages['baobuns.jpg'], alt: 'Bao Buns - Soft and fluffy steamed buns with savory filling', link: '/recipe/bao-buns' },
+        { url: combinedImages['crepes.jpg'], alt: 'Crepes - Thin pancakes filled with sweet or savory ingredients', link: '/recipe/classic-french-crepes' },
+        { url: combinedImages['cupcake.jpg'], alt: 'Vanilla Cupcake - Classic sweet treat with vanilla frosting', link: '/recipe/vanilla-cupcakes' },
+        { url: combinedImages['curriedtomatolentil.jpg'], alt: 'Curried Tomato Lentil Soup - Hearty soup with lentils and tomatoes', link: '/recipe/curried-tomato-lentil-soup' },
+        { url: combinedImages['gnocchi.jpg'], alt: 'Gnocchi - Soft dough dumplings made from potatoes', link: '/gnocchi' },
+        { url: combinedImages['honeygarlicglazedsalmon.jpg'], alt: 'Honey Garlic Glazed Salmon - Tender salmon fillet with sweet garlic glaze', link: '/recipe/honey-garlic-glazed-salmon' },
+        { url: combinedImages['macandcheese.jpg'], alt: 'Mac and Cheese - Classic comfort food with cheesy pasta', link: '/recipe/mac-and-cheese' },
+        { url: combinedImages['mediterraneanchoppedsalad.jpg'], alt: 'Mediterranean Chopped Salad - Fresh and flavorful salad with Mediterranean ingredients', link: '/recipe/mediterranean-chopped-salad' },
+        { url: combinedImages['pastasausage.jpg'], alt: 'Pasta with Sausage - Pasta dish with savory sausage and tomato sauce', link: '/recipe/pasta-with-sausage' },
+        { url: combinedImages['strawberrysorbet.jpg'], alt: 'Strawberry Sorbet - Refreshing frozen dessert made from strawberries', link: '/recipe/strawberry-sorbet' },
     ];
 
     const indexOfLastRecipe = currentPage * recipesPerPage;
