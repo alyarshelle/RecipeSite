@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import LandingPage from './RecipePages/LandingPage';
+import About from './RecipePages/About';
 import AllRecipes from './RecipePages/AllRecipes';
 import Spaghetti from './RecipePages/OriginalPages/Spaghetti';
 import ChickenTacos from './RecipePages/OriginalPages/ChickenTacos';
@@ -34,6 +35,7 @@ function App() {
           <Route path="/recipe" render={() => <RecipeComponent />} />
           <Route path="recipe/:link" render={(props) => <RecipeSubpage {...props} />} />
           <Route path="/submit-recipe-form" component={RecipeForm} />
+          <Route path="/about" component={About} />
         </Switch>
     </Router>
   );

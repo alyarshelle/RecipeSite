@@ -18,9 +18,9 @@ function Navbar() {
           <li className="nav-item">
             <a href="/all-recipes">Recipes</a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a href="/search">Search</a>
-          </li>
+          </li> */}
           <li className="nav-item">
             <a href="/submit-recipe-form">Submit Recipe</a>
           </li>
