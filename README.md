@@ -22,13 +22,21 @@ My Recipe Website provides a user-friendly interface where users can explore a d
 
 ## Additional Features for the Future
 
-- **Responsive Design**: The website is fully responsive, ensuring optimal viewing across all devices, from desktops to mobile phones.
-  
-- **Interactive User Interface**: Interactive elements such as hover effects and clickable cards enhance user engagement and navigation.
-  
-- **Robust Backend**: Built using Node.js and Express.js, the backend infrastructure ensures efficient handling of data submissions, storage, and retrieval.
-  
-- **Continuous Improvement**: I am committed to improving the user experience by incorporating feedback and staying updated with the latest web development trends and technologies.
+- **All Recipes**: 
+  - Dynamically add recipes including a short description to be used on this page to describe each recipe.
+  - Dynamically add recipe links and images to be called and formatted accordingly.
+
+- **Layout**:
+  - Ensuring browser layout stays the same regardless of window size.
+
+- **Recipes**:
+  - Adding recipes by category.
+  - Filtering recipes by words, category, rating, difficulty, etc.
+  - Search feature for certain recipes.
+  - Track recently clicked recipes.
+  - Add a rating system to update ratings for recipes.
+  - Seeing recipes that you have added.
+
 
 ## Getting Started
 
