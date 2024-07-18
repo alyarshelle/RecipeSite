@@ -50,26 +50,35 @@ const About = () => {
         </ul>
       </section>
       <section>
-        <h2>Additional Features for the Future</h2>
-        <ul>
-          <li>
-            <strong>Responsive Design:</strong> My website is designed to be fully responsive, providing an optimal viewing 
-            experience across all devices, from desktops to mobile phones.
-          </li>
-          <li>
-            <strong>Interactive User Interface:</strong> I prioritize user engagement by implementing interactive UI elements, 
-            such as hover effects and clickable cards, to make navigation intuitive and enjoyable.
-          </li>
-          <li>
-            <strong>Robust Backend:</strong> My backend infrastructure is built using Node.js and Express.js, ensuring efficient 
-            handling of data submissions, storage, and retrieval.
-          </li>
-          <li>
-            <strong>Enhanced User Experience:</strong> I continuously work on improving the user experience by incorporating 
-            feedback and staying updated with the latest web development trends and technologies.
-          </li>
-        </ul>
-      </section>
+  <h2>Additional Features for the Future</h2>
+  <ul>
+    <li>
+      <strong>All Recipes:</strong>
+      <ul>
+        <li>Dynamically add recipes including a short description to be used on this page to describe each recipe.</li>
+        <li>Dynamically add recipe links and images to be called and formatted accordingly.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Layout:</strong>
+      <ul>
+        <li>Ensuring browser layout stays the same regardless of window size.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Recipes:</strong>
+      <ul>
+        <li>Adding recipes by category.</li>
+        <li>Filtering recipes by words, category, rating, difficulty, etc.</li>
+        <li>Search feature for certain recipes.</li>
+        <li>Track recently clicked recipes.</li>
+        <li>Add a rating system to update ratings for recipes.</li>
+        <li>Seeing recipes that you have added.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
       <footer>
         <p>
           Thank you for visiting my Recipe Website. I hope you enjoy using my platform as much as I enjoyed creating it. Happy
