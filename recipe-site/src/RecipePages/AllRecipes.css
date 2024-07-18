@@ -1,0 +1,132 @@
+/* Make the image span the full width of the screen */
+.food-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.food-section img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* General styling for the container of the image and text */
+.image-container {
+    position: relative;
+}
+
+/* Styling for the text overlay on the image */
+.image-text {
+    position: absolute;
+    top: 170px;
+    left: 670px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* General styling that applies to both title1 and title2 */
+.image-text,
+#title1, #title2 {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Additional specific styling for the first title */
+#title1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive; /* Apply Lobster font to title1 */
+}
+
+/* Additional specific styling for the second title */
+#title2 {
+    font-size: 24px;
+    margin-top: 10px; /* Custom spacing between titles */
+    font-family: 'Pacifico', cursive; /* Apply Pacifico font to title2 */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 80px 5px;
+    margin: 120px;
+}
+
+.image-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 300px;
+    height: 450px;
+    max-width: 100%; 
+    max-height: 100%; /* Ensure images do not exceed their container height */
+    object-fit: cover; /* Ensure the entire image fits within the container */
+    margin-right: 10px; /* Adjust spacing between images horizontally */
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+.image-item:hover img {
+    transform: scale(1);
+}
+
+.image-item:hover {
+    opacity: 0.8;
+}
+
+.image-item:hover .overlay-text {
+    opacity: 1;
+}
+
+/* Styling for the overlay text on each image */
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    transform: translateX(-40px);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    color: #777;
+    cursor: not-allowed;
+}
+

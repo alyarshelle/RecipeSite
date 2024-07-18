@@ -1,0 +1,22 @@
+textarea, input{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 60%;
+}
+
+button{
+    margin-left: 385px;
+}
+
+#mid{
+    text-align: center;
+    color:red;
+    font-size: bold 30px;
+}
+
+
+#desc{
+    text-align: left;
+    padding: 20px;
+}
