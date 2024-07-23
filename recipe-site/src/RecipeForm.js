@@ -103,7 +103,7 @@ function RecipeForm() {
                     <br />
                     <input type="file" onChange={handleFileChange} accept="image/*" />
                     <br />
-                    <button type="submit">Submit</button>
+                    <button id="sub" type="submit">Submit</button>
                 </form>
                 {submissionMessage && <p id="mid">{submissionMessage}</p>}
             </div>
