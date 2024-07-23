@@ -40,6 +40,7 @@
     font-size: 36px;
     font-weight: bold;
     font-family: 'Lobster', cursive; /* Apply Lobster font to title1 */
+    color:white;
 }
 
 /* Additional specific styling for the second title */
@@ -47,6 +48,7 @@
     font-size: 24px;
     margin-top: 10px; /* Custom spacing between titles */
     font-family: 'Pacifico', cursive; /* Apply Pacifico font to title2 */
+    color:white;
 }
 
 .image-grid {

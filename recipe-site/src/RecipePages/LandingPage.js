@@ -134,7 +134,7 @@ function LandingPage() {
       <br/>
         <p id="all">
           <a href="/all-recipes">Show Me More!➔</a>
-        </p>   
+        </p>    
       </section>
 
       {/* <section id="second">
