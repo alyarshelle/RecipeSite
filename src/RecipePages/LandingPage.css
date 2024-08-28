@@ -1,0 +1,135 @@
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem; /* 20px converted to 2rem */
+}
+
+.recipe-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust spacing between cards */
+  margin: 0 auto; /* Centering the cards horizontally */
+  max-width: 80%; /* Add a max-width to maintain responsiveness */
+}
+
+.recipe-cards > * {
+  flex: 0 0 calc(33.33% - 1rem); /* Adjust as needed for spacing between cards */
+  margin-bottom: 3rem; /* Adjust as needed for spacing between rows */
+}
+
+header {
+  text-align: center;
+  padding: 1rem; /* 20px converted to 1rem */
+  background-color: #f8f8f8;
+  margin-bottom: 2rem; /* 20px converted to 2rem */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem; /* 24px converted to 1.5rem */
+  color: #333;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+section h2{
+  text-align: center;
+  padding: 1rem; /* 20px converted to 1rem */
+}
+
+#all{
+  position: absolute;
+  top: 80vh; /* 1260px converted to 80vh */
+  right: 10vw; /* 140px converted to 10vw */
+}
+
+#all a{
+  text-decoration: none;
+  color: black;
+}
+
+#all a:hover {
+  color: blue; /* Change text color on hover */
+}
+
+#highlight {
+  background-color: rgb(200, 254, 254);
+  height: 50vh; /* 400px converted to 25vh */
+}
+
+#highlight img {
+  width: 15vw; /* 260px converted to 20vw */
+  height: 30vh; /* 250px converted to 20vh */
+  margin: 2rem 1rem; /* Adjust margins */
+  position: absolute;
+}
+
+.q{
+  left: 10vw; /* 100px converted to 10vw */
+  top: 2rem; /* 30px converted to 2rem */
+}
+
+.h{
+  left: 31vw; /* 450px converted to 40vw */
+  top: 2rem; /* 30px converted to 2rem */
+}
+
+.c{
+  right: 31vw; /* 450px converted to 40vw */
+  top: 2rem; /* 30px converted to 2rem */
+}
+
+.cul{
+  right: 10vw; /* 100px converted to 10vw */
+  top: 2rem; /* 30px converted to 2rem */
+}
+
+.image-contain{
+  width: 10vw; /* 150px converted to 10vw */
+  height: 2rem; /* 30px converted to 2rem */
+  background: blue;
+  text-align: center;
+  position: absolute;
+}
+
+#under a{
+  text-decoration: none;
+  color: white;
+}
+
+.quick{
+  left: 13.5vw; /* 170px converted to 15vw */
+  top: 36.5vh; /* 305px converted to 20vh */
+}
+
+.health{
+  left: 34.5vw; /* 510px converted to 45vw */
+  top: 36.5vh; /* 305px converted to 20vh */
+}
+
+.cupcake{
+  right: 34.5vw; /* 510px converted to 45vw */
+  top: 36.5vh; /* 305px converted to 20vh */  
+}
+
+.culture{
+  right: 13.5vw; /* 160px converted to 15vw */
+  top: 36.5vh; /* 305px converted to 20vh */
+}
+
+.fade-on-hover {
+  transition: opacity 0.3s ease; /* Transition effect on opacity */
+}
+
+.fade-on-hover:hover{
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+#second {
+  background-color: rgb(200, 254, 254);
+  height: 25vh; /* 400px converted to 25vh */
+}

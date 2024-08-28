@@ -1,0 +1,395 @@
+{
+  "recipes": [
+    {
+      "link": "strawberry-sorbet",
+      "title": "Strawberry Sorbet",
+      "description": [
+        "This refreshing strawberry sorbet is a perfect summer treat. Made with fresh strawberries, it has a vibrant color and a sweet-tart flavor that will cool you down on a hot day.",
+        "Easy to make with just a few ingredients, this sorbet is a healthy and delicious dessert option. Serve it in a bowl or on a cone for a delightful and guilt-free indulgence."
+      ],
+      "rating": "4.8",
+      "prepTime": "15 mins",
+      "cookTime": "0 mins",
+      "totalTime": "4 hrs 15 mins",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 lb fresh strawberries, hulled",
+        "3/4 cup granulated sugar",
+        "3/4 cup water",
+        "1 tbsp lemon juice"
+      ],
+      "instructions": [
+        "In a saucepan, combine the sugar and water. Cook over medium heat, stirring until the sugar is completely dissolved. Remove from heat and let cool to room temperature.",
+        "In a blender, puree the strawberries until smooth. Strain the puree through a fine-mesh sieve to remove the seeds.",
+        "In a large bowl, combine the strawberry puree, sugar syrup, and lemon juice. Stir well.",
+        "Pour the mixture into an ice cream maker and freeze according to the manufacturer's instructions.",
+        "Transfer the sorbet to an airtight container and freeze for at least 4 hours or until firm.",
+        "Serve the sorbet in bowls or cones and enjoy!"
+      ],
+      "imageUrl": "/uploads/strawberrysorbet.jpg"
+    },
+    {
+      "link": "classic-french-crepes",
+      "title": "Classic French Crepes",
+      "description": [
+        "These classic French crepes are thin, delicate, and perfect for any meal of the day. Whether sweet or savory, they can be filled with a variety of ingredients to suit your taste.",
+        "With a simple batter of flour, eggs, milk, and butter, these crepes cook up quickly on a hot skillet. Enjoy them with fresh fruits and whipped cream for breakfast, or with ham and cheese for a satisfying lunch or dinner."
+      ],
+      "rating": "4.9",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "difficulty": "Intermediate",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "2 large eggs",
+        "1 1/4 cups milk",
+        "2 tbsp unsalted butter, melted",
+        "1/4 tsp salt",
+        "1 tbsp granulated sugar (optional, for sweet crepes)"
+      ],
+      "instructions": [
+        "In a large mixing bowl, whisk together the flour and salt (and sugar if making sweet crepes).",
+        "In another bowl, whisk together the eggs, milk, and melted butter until well combined.",
+        "Gradually pour the wet ingredients into the dry ingredients, whisking constantly until smooth and no lumps remain.",
+        "Heat a non-stick skillet or crepe pan over medium heat. Lightly grease the pan with butter or oil.",
+        "Pour about 1/4 cup of batter into the center of the hot skillet, swirling it around to evenly coat the bottom in a thin layer.",
+        "Cook the crepe for about 1-2 minutes, or until the edges start to lift slightly and the bottom is lightly golden brown.",
+        "Carefully flip the crepe using a spatula, and cook the other side for an additional 1-2 minutes.",
+        "Transfer the cooked crepe to a plate and cover with a clean kitchen towel to keep warm.",
+        "Repeat with the remaining batter, greasing the pan lightly between each crepe.",
+        "Serve the crepes warm with your choice of fillings such as fresh fruits, whipped cream, Nutella, ham, cheese, or spinach and mushrooms.",
+        "Enjoy your delicious homemade French crepes!"
+      ],
+      "imageUrl": "/uploads/crepes.jpg"
+    },
+    {
+      "link": "mediterranean-chopped-salad",
+      "title": "Mediterranean Chopped Salad",
+      "description": [
+        "This Mediterranean chopped salad is a vibrant and refreshing dish, packed with fresh vegetables and Mediterranean flavors. It's a perfect side dish or a light meal on its own.",
+        "With ingredients like cucumbers, tomatoes, olives, and feta cheese, this salad is colorful and full of texture. Tossed in a simple olive oil and lemon dressing, it's healthy and delicious."
+      ],
+      "rating": "4.7",
+      "prepTime": "20 mins",
+      "cookTime": "0 mins",
+      "totalTime": "20 mins",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 cucumber, diced",
+        "2 cups cherry tomatoes, halved",
+        "1/2 red onion, thinly sliced",
+        "1 cup Kalamata olives, pitted and halved",
+        "1/2 cup crumbled feta cheese",
+        "1/4 cup fresh parsley, chopped",
+        "1/4 cup fresh mint, chopped",
+        "1/4 cup extra-virgin olive oil",
+        "Juice of 1 lemon",
+        "Salt and pepper, to taste"
+      ],
+      "instructions": [
+        "In a large salad bowl, combine the diced cucumber, cherry tomatoes, red onion, Kalamata olives, feta cheese, parsley, and mint.",
+        "Drizzle the olive oil and lemon juice over the salad ingredients.",
+        "Season with salt and pepper, to taste.",
+        "Gently toss the salad until well combined and evenly coated with the dressing.",
+        "Serve immediately, or refrigerate for a few hours to allow the flavors to meld together.",
+        "Enjoy your refreshing Mediterranean chopped salad!"
+      ],
+      "imageUrl": "/uploads/mediterraneanchoppedsalad.jpg"
+    },
+    {
+      "link": "bao-buns",
+      "title": "Bao Buns",
+      "description": [
+        "Bao buns, also known as steamed buns or baozi, are a type of Chinese bread roll that is steamed to perfection. These soft and fluffy buns are typically filled with savory or sweet fillings and are a popular street food and dim sum item.",
+        "Making bao buns at home can be a fun and rewarding experience, allowing you to customize the fillings to your liking."
+      ],
+      "rating": "4.8",
+      "prepTime": "1 hour 30 minutes",
+      "cookTime": "12 minutes",
+      "totalTime": "1 hour 42 minutes",
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1/2 cup warm water",
+        "1/4 cup milk",
+        "2 tbsp sugar",
+        "1 tbsp vegetable oil",
+        "1 tsp instant yeast",
+        "1/2 tsp baking powder",
+        "1/4 tsp salt"
+      ],
+      "instructions": [
+        "In a large mixing bowl, combine flour, sugar, yeast, baking powder, and salt.",
+        "Mix warm water, milk, and vegetable oil in a separate bowl.",
+        "Gradually add the wet ingredients to the dry ingredients, stirring until a dough forms.",
+        "Knead the dough on a floured surface for about 10 minutes until smooth and elastic.",
+        "Place the dough in a lightly oiled bowl, cover, and let it rise in a warm place for about 1 hour or until doubled in size.",
+        "Punch down the dough and divide it into equal portions.",
+        "Roll each portion into a ball and flatten it into a small circle.",
+        "Place a spoonful of your desired filling in the center of each circle, then fold and seal the edges to form a bun.",
+        "Place the buns on parchment paper squares and let them rise for another 30 minutes.",
+        "Steam the buns in a bamboo steamer over boiling water for 10-12 minutes until puffed and cooked through.",
+        "Serve warm and enjoy!"
+      ],
+      "imageUrl": "/uploads/baobuns.jpg"
+    },
+    {
+      "link": "baklava",
+      "title": "Baklava",
+      "description": [
+        "Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts, sweetened and held together with syrup or honey. It is characteristic of the cuisines of the former Ottoman Empire, and is also found in Central and Southwest Asia.",
+        "Making baklava at home involves layering butter-brushed filo dough with a nut mixture, then baking and soaking in a fragrant syrup. It's a decadent treat that's perfect for special occasions."
+      ],
+      "rating": "4.9",
+      "prepTime": "30 minutes",
+      "cookTime": "1 hour",
+      "totalTime": "1 hour 30 minutes",
+      "difficulty": "Medium",
+      "ingredients": [
+        "1 package filo dough",
+        "1 cup unsalted butter, melted",
+        "2 cups chopped nuts (walnuts, pistachios, or a mix)",
+        "1 teaspoon ground cinnamon",
+        "1 cup water",
+        "1 cup granulated sugar",
+        "1/2 cup honey",
+        "1 teaspoon vanilla extract",
+        "1 teaspoon grated lemon zest"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C).",
+        "Butter the bottoms and sides of a 9x13 inch pan.",
+        "Chop nuts and toss with cinnamon. Set aside.",
+        "Unroll filo dough. Cut whole stack in half to fit pan.",
+        "Cover filo with a dampened cloth to keep from drying out as you work.",
+        "Place two sheets of dough in the pan, butter thoroughly. Repeat until you have 8 sheets layered.",
+        "Sprinkle 2-3 tablespoons of nut mixture on top. Top with two sheets of dough, butter, nuts, layering as you go.",
+        "The top layer should be about 6-8 sheets deep.",
+        "Using a sharp knife, cut into diamond or square shapes all the way to the bottom of the pan.",
+        "Bake for about 50 minutes until baklava is golden and crisp.",
+        "Make sauce while baklava is baking. Boil sugar and water until sugar is melted. Add vanilla and honey. Simmer for about 20 minutes.",
+        "Remove baklava from oven and immediately spoon sauce over it. Let cool.",
+        "Serve in cupcake papers. This freezes well. Leave it uncovered as it gets soggy if wrapped up."
+      ],
+      "imageUrl": "/uploads/baklava.jpg"
+    },
+    {
+      "link": "mac-and-cheese",
+      "title": "Mac and Cheese",
+      "description": [
+        "Mac and Cheese is a classic comfort food that combines tender pasta with a rich and creamy cheese sauce. This dish is beloved by kids and adults alike and can be enjoyed as a main course or a side dish.",
+        "Making homemade mac and cheese is straightforward and allows you to enjoy a creamy, cheesy dish that's far superior to the boxed variety. Customize it with different cheeses or add-ins like bacon or breadcrumbs for extra flavor and texture."
+      ],
+      "rating": "4.7",
+      "prepTime": "15 minutes",
+      "cookTime": "30 minutes",
+      "totalTime": "45 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "8 oz elbow macaroni",
+        "2 cups shredded cheddar cheese",
+        "1/2 cup grated Parmesan cheese",
+        "3 cups milk",
+        "1/4 cup butter",
+        "2 1/2 tablespoons all-purpose flour",
+        "1/2 teaspoon salt",
+        "1/4 teaspoon black pepper",
+        "1/4 teaspoon paprika (optional)"
+      ],
+      "instructions": [
+        "Cook macaroni according to the package directions. Drain and set aside.",
+        "In a saucepan, melt butter over medium heat. Stir in flour and cook for about 1 minute until bubbly.",
+        "Gradually whisk in milk, and cook until the mixture thickens and bubbles, about 5 minutes.",
+        "Remove from heat and stir in cheddar cheese and Parmesan cheese until melted and smooth.",
+        "Season with salt, black pepper, and paprika if using.",
+        "Combine cheese sauce with cooked macaroni and mix well.",
+        "Pour into a lightly greased 2-quart baking dish.",
+        "Bake at 350°F (175°C) for 20-25 minutes or until the top is golden and bubbly.",
+        "Let cool slightly before serving."
+      ],
+      "imageUrl": "/uploads/macandcheese.jpg"
+    },
+    {
+      "link": "curried-tomato-lentil-soup",
+      "title": "Curried Tomato Lentil Soup",
+      "description": [
+        "Curried Tomato Lentil Soup is a hearty and flavorful dish that combines the earthiness of lentils with the rich taste of tomatoes and a blend of aromatic spices. This vegan soup is both nutritious and satisfying, making it a perfect meal for any time of the year.",
+        "Easy to prepare and full of protein and fiber, this soup is a great choice for a healthy lunch or dinner. The curry spices add a warm and comforting element that pairs perfectly with the tangy tomatoes and tender lentils."
+      ],
+      "rating": "4.8",
+      "prepTime": "15 minutes",
+      "cookTime": "40 minutes",
+      "totalTime": "55 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 tablespoon olive oil",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon ginger, grated",
+        "1 tablespoon curry powder",
+        "1 teaspoon ground cumin",
+        "1/2 teaspoon ground turmeric",
+        "1 cup dried red lentils",
+        "1 can (14.5 oz) diced tomatoes",
+        "4 cups vegetable broth",
+        "1 cup coconut milk",
+        "Salt and pepper to taste",
+        "Fresh cilantro for garnish"
+      ],
+      "instructions": [
+        "Heat olive oil in a large pot over medium heat.",
+        "Add chopped onion and cook until softened, about 5 minutes.",
+        "Stir in garlic and ginger, cooking for another minute until fragrant.",
+        "Add curry powder, ground cumin, and ground turmeric, and cook for another 1-2 minutes.",
+        "Add lentils, diced tomatoes, and vegetable broth to the pot. Bring to a boil.",
+        "Reduce heat and simmer for about 30 minutes, or until lentils are tender.",
+        "Stir in coconut milk and season with salt and pepper to taste.",
+        "Simmer for an additional 5-10 minutes to let the flavors meld.",
+        "Serve hot, garnished with fresh cilantro."
+      ],
+      "imageUrl": "/uploads/curriedtomatolentil.jpg"
+    },
+    {
+      "link": "honey-garlic-glazed-salmon",
+      "title": "Honey Garlic Glazed Salmon",
+      "description": [
+        "Honey Garlic Glazed Salmon is a delicious and flavorful dish that combines the sweetness of honey with the savory taste of garlic, perfectly complementing the richness of salmon. This recipe is quick and easy to prepare, making it ideal for a weekday dinner or a special occasion.",
+        "The glaze caramelizes beautifully on the salmon, creating a mouthwatering crust while keeping the fish tender and moist. Serve with steamed vegetables and rice for a complete and satisfying meal."
+      ],
+      "rating": "4.9",
+      "prepTime": "10 minutes",
+      "cookTime": "15 minutes",
+      "totalTime": "25 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "4 salmon fillets (about 6 oz each)",
+        "Salt and black pepper to taste",
+        "2 tablespoons honey",
+        "2 tablespoons soy sauce",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "1 tablespoon fresh lemon juice",
+        "1 teaspoon cornstarch",
+        "2 tablespoons water",
+        "Sesame seeds and chopped green onions for garnish (optional)"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C).",
+        "Season salmon fillets with salt and black pepper.",
+        "In a small bowl, whisk together honey, soy sauce, minced garlic, olive oil, and lemon juice.",
+        "Place salmon fillets on a baking sheet lined with parchment paper. Brush half of the honey garlic mixture over the salmon.",
+        "Bake salmon for 12-15 minutes, or until salmon flakes easily with a fork.",
+        "While salmon is baking, make the glaze: In a small saucepan, combine cornstarch and water. Add the remaining honey garlic mixture. Bring to a boil, then reduce heat and simmer until thickened.",
+        "Brush the glaze over the baked salmon fillets.",
+        "Sprinkle with sesame seeds and chopped green onions if desired.",
+        "Serve hot, with steamed vegetables and rice."
+      ],
+      "imageUrl": "/uploads/honeygarlicglazedsalmon.jpg"
+    },
+    {
+      "link": "pasta-with-sausage",
+      "title": "Pasta with Sausage",
+      "description": [
+        "Pasta with Sausage is a hearty and flavorful dish that combines pasta with Italian sausage in a rich tomato sauce. This comforting meal is easy to prepare and perfect for a family dinner or a gathering with friends.",
+        "The combination of savory sausage, garlic, herbs, and tomatoes creates a delicious sauce that coats the pasta beautifully. Serve with a side of garlic bread and a sprinkle of Parmesan cheese for a satisfying and delicious meal."
+      ],
+      "rating": "4.7",
+      "prepTime": "10 minutes",
+      "cookTime": "30 minutes",
+      "totalTime": "40 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "8 oz pasta (such as penne or fusilli)",
+        "1 lb Italian sausage, casings removed",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 can (14.5 oz) diced tomatoes",
+        "1 can (8 oz) tomato sauce",
+        "1 teaspoon dried oregano",
+        "1/2 teaspoon dried basil",
+        "Salt and pepper to taste",
+        "Fresh basil leaves for garnish (optional)",
+        "Grated Parmesan cheese for serving"
+      ],
+      "instructions": [
+        "Cook pasta according to package directions. Drain and set aside.",
+        "In a large skillet, cook Italian sausage over medium-high heat until browned and cooked through, breaking it into crumbles as it cooks.",
+        "Add chopped onion to the skillet and cook until softened, about 5 minutes.",
+        "Stir in minced garlic and cook for 1 minute until fragrant.",
+        "Add diced tomatoes, tomato sauce, dried oregano, and dried basil to the skillet. Season with salt and pepper to taste.",
+        "Simmer sauce for 15-20 minutes, stirring occasionally, to let the flavors meld together.",
+        "Add cooked pasta to the skillet and toss to coat evenly with the sauce.",
+        "Serve hot, garnished with fresh basil leaves and grated Parmesan cheese."
+      ],
+      "imageUrl": "/uploads/pastasausage.jpg"
+    },
+    {
+      "link": "gnocchi",
+      "title": "Gnocchi",
+      "description": [
+        "Gnocchi are soft and pillowy Italian dumplings made from potatoes, flour, and sometimes eggs. They have a delicate texture and mild flavor, making them versatile for pairing with various sauces like tomato, pesto, or creamy sauces.",
+        "Making homemade gnocchi allows you to enjoy fresh, tender dumplings that are far superior to store-bought versions. Serve them as a main course or a side dish for a comforting and satisfying meal."
+      ],
+      "rating": "4.8",
+      "prepTime": "30 minutes",
+      "cookTime": "5 minutes",
+      "totalTime": "35 minutes",
+      "difficulty": "Medium",
+      "ingredients": [
+        "2 lbs russet potatoes (about 4 medium-sized)",
+        "1 egg, lightly beaten",
+        "1 1/2 cups all-purpose flour, plus more for dusting",
+        "1/2 teaspoon salt",
+        "Optional: nutmeg, grated (to taste)"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C). Pierce potatoes with a fork and bake for 45-60 minutes, or until tender.",
+        "Peel potatoes while still warm and mash thoroughly or pass through a potato ricer onto a clean surface.",
+        "Let cool slightly, then add beaten egg, salt, and optional grated nutmeg. Mix well.",
+        "Gradually add flour, kneading gently until dough forms a soft ball. Be careful not to overwork the dough, as it can become tough.",
+        "Divide dough into smaller portions and roll each into a long rope, about 1/2 inch thick.",
+        "Cut ropes into 1-inch pieces and roll each piece over the tines of a fork or a gnocchi board to create ridges.",
+        "Bring a large pot of salted water to a boil. Add gnocchi in batches and cook until they float to the surface, about 2-3 minutes.",
+        "Remove cooked gnocchi with a slotted spoon and transfer to a serving dish.",
+        "Serve hot with your favorite sauce, such as marinara, pesto, or brown butter sage sauce."
+      ],
+      "imageUrl": "/uploads/gnocchi.jpg"
+    },
+    {
+      "link": "vanilla-cupcakes",
+      "title": "Vanilla Cupcakes",
+      "description": [
+        "Vanilla Cupcakes are classic, tender, and fluffy treats with a delightful vanilla flavor. These cupcakes are perfect for any occasion, from birthdays to afternoon tea.",
+        "Decorate them with your favorite frosting and sprinkles for a festive touch, or enjoy them simply with a dusting of powdered sugar."
+      ],
+      "rating": "4.9",
+      "prepTime": "15 minutes",
+      "cookTime": "20 minutes",
+      "totalTime": "35 minutes",
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 1/4 cups all-purpose flour",
+        "1 1/2 teaspoons baking powder",
+        "1/4 teaspoon salt",
+        "1/2 cup unsalted butter, softened",
+        "3/4 cup granulated sugar",
+        "2 large eggs, room temperature",
+        "2 teaspoons vanilla extract",
+        "1/2 cup milk"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C). Line a muffin tin with cupcake liners.",
+        "In a medium bowl, whisk together flour, baking powder, and salt.",
+        "In a separate large bowl, beat softened butter and sugar together until light and fluffy.",
+        "Add eggs one at a time, beating well after each addition. Mix in vanilla extract.",
+        "Gradually add dry ingredients to the butter mixture, alternating with milk, beginning and ending with the dry ingredients. Mix until just combined.",
+        "Divide batter evenly among the cupcake liners, filling each about 2/3 full.",
+        "Bake for 18-20 minutes, or until a toothpick inserted into the center comes out clean.",
+        "Remove cupcakes from the oven and let them cool in the pan for 5 minutes before transferring to a wire rack to cool completely.",
+        "Once cooled, frost with your favorite frosting and decorate as desired."
+      ],
+      "imageUrl": "/uploads/cupcake.jpg"
+    }
+  ]
+}

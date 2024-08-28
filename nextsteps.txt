@@ -1,0 +1,4 @@
+what i need to do: 
+-you need to make sure that the recipes are being added and can be accessed on the site in the all recipes and by the id number
+-you need to make sure everything else is working as you intended
+-add an about page describing yourself and the recipe site and how it functions
